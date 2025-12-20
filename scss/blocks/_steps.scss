@@ -1,0 +1,9 @@
+.steps {
+  --gap-items-decor: 24px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

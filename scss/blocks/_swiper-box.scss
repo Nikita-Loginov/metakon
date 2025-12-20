@@ -1,0 +1,18 @@
+.swiper-box {
+  .swiper-slide {
+    height: auto;
+  }
+
+  &__block {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .arrows-swiper {
+    &:has(.arrows-swiper__arrow.prev.swiper-button-disabled):has(
+        .arrows-swiper__arrow.next.swiper-button-disabled
+      ) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.items-decor {
+  --gap-items-decor: 24px;
+
+  display: flex;
+  align-items: center;
+  gap: calc(var(--gap-items-decor) * 2);
+}
+
+.items-decor-card {
+  border-top: 2px solid var(--gray-color-100);
+
+  &:not(:last-child) {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: "";
+      right: calc(var(--gap-items-decor) * -1);
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background-color: var(--gray-color-100);
+    }
+  }
+
+  &--tb {
+    border-bottom: 2px solid var(--gray-color-100);
+  }
+
+  &--gray {
+    border-color: #0000004d;
+
+    &:not(:last-child) {
+      &:before {
+        background-color: #0000004d;
+      }
+    }
+  }
+
+  &--small {
+    border-width: 1px;
+
+    &:not(:last-child) {
+      &:before {
+       width: 1px;
+      }
+    }
+  }
+}

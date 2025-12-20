@@ -1,0 +1,165 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--gray-color-200);
+  color: var(--dark-color-200);
+  font-family: var(--font-main);
+  font-weight: var(--weight-font-main);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-tight);
+  overflow-x: hidden;
+
+  &.open-modal {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  padding-top: calc(var(--header-height, 115px));
+
+  section {
+    margin-bottom: var(--gap-blocks);
+
+    &.section-padding {
+      padding: var(--gap-blocks) 0;
+      margin: 0;
+    }
+
+    &.section-padding-top {
+      padding-top: var(--gap-blocks);
+    }
+  }
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding-inline: var(--container-inline-padding);
+
+  &--small {
+    max-width: var(--container-width-second);
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  svg,
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.textbox {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.topBox {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__header-content,
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    justify-content: space-between;
+  }
+}
+
+.link-spread {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+
+  &:before {
+    content: "/";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    color: var(--primary-color-100);
+    opacity: 0;
+    visibility: visible;
+    transition: all 0.3s;
+  }
+
+  &.active,
+  &:hover {
+    &::before {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.decor-word {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-transform: uppercase;
+
+  &:after {
+    content: "";
+    right: 0;
+    width: 47px;
+    height: 2px;
+    background-color: currentColor;
+  }
+}
+
+.line-decor {
+  background-color: var(--primary-color-100);
+  display: flex;
+  width: 47px;
+  height: 2px;
+  flex-shrink: 0;
+}
+
+.ellipsis-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  box-orient: vertical;
+}

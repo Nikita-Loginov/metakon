@@ -1,0 +1,63 @@
+.services {
+  background-color: var(--gray-color-100);
+}
+.services__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.services__items {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 24px;
+}
+.services__items > * {
+  grid-column: span 3;
+}
+.services__items > *.big {
+  grid-column: span 6;
+}
+.services__items > *.middle {
+  grid-column: span 4;
+}
+
+.aboutNumber .swiper-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.steps {
+  --gap-items-decor: 24px;
+}
+.steps__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.products__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.products__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}

@@ -1,0 +1,22 @@
+.form-request {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__footer {
+    display: grid;
+    grid-template-columns: 60% auto;
+    align-items: center;
+    gap: 24px;
+
+    .textbox {
+      color: var(--gray-color-160);
+    }
+  }
+}

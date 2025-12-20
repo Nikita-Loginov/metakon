@@ -1,0 +1,434 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer-top">
+        <div class="footer-top__content">
+          <div class="textbox">
+            <p class="p1">
+              Напишите или позвоните нам по любым вопросам, мы с радостью
+              проконсультирем вас
+            </p>
+          </div>
+
+          <ul class="footer-top__list">
+            <li class="footer-top__link">
+              <a
+                href="tel:+73422009898"
+                rel="noopener noreferrer"
+                aria-label="Позвлнить по номеру +7 (342) 200 98 98"
+                title="+7 (342) 200 98 98"
+                itemprop="telephone"
+                class="footer-top__item h3 accent-color"
+                >+7 (342) 200 98 98</a
+              >
+            </li>
+
+            <li class="footer-top__link">
+              <a
+                href="mailto:manager_metakon@mail.ru"
+                rel="noopener noreferrer"
+                aria-label="Написать письмо на manager_metakon@mail.ru"
+                title="manager_metakon@mail.ru"
+                itemprop="email"
+                class="footer-top__item h3 accent-color"
+                >manager_metakon@mail.ru</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-top__info">
+          <p class="p1">Или оставьте заявку</p>
+
+          <form novalidate class="form-request form">
+            <div class="form-request__inputs">
+              <label class="input-box form__item">
+                <div class="input-box__head">
+                  <p class="p4 uppercase-text">ФИО</p>
+                </div>
+
+                <div class="input-box__block">
+                  <input
+                    type="text"
+                    placeholder="Иванов Иван Иванович"
+                    name="fio"
+                    required
+                    minlength="1"
+                    pattern="[А-Яа-яЁё\s\-]+"
+                    data-title="Пожалуйста, введите корректное ФИО (только русские буквы, пробелы и дефисы)"
+                    data-empty="Введите минимум 1 символ"
+                    aria-errormessage="fio-errors"
+                  />
+                </div>
+
+                <div
+                  class="input-box__errors form__errors"
+                  id="fio-errors"
+                ></div>
+              </label>
+
+              <label class="input-box form__item">
+                <div class="input-box__head">
+                  <p class="p4 uppercase-text">Телефон</p>
+                </div>
+
+                <div class="input-box__block">
+                  <input
+                    type="tel"
+                    placeholder="+7 9__ ___ __ __"
+                    name="tel"
+                    required
+                    minlength="1"
+                    pattern="^\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$"
+                    data-title="Введите телефон в формате: +7 (900) 000-00-00"
+                    data-empty="Ведите минимум один символ"
+                    aria-errormessage="tel-errors"
+                  />
+                </div>
+
+                <div
+                  class="input-box__errors form__errors"
+                  id="tel-errors"
+                ></div>
+              </label>
+
+              <label class="input-box form__item">
+                <div class="input-box__head">
+                  <p class="p4 uppercase-text">Почта</p>
+                </div>
+
+                <div class="input-box__block">
+                  <input
+                    type="email"
+                    name="email"
+                    minlength="1"
+                    required=""
+                    pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                    data-title="Введите корректный email адрес"
+                    data-empty="Ведите минимум один символ"
+                    aria-errormessage="email-errors"
+                    placeholder="E-mail"
+                  />
+                </div>
+
+                <div
+                  class="input-box__errors form__errors"
+                  id="email-errors"
+                ></div>
+              </label>
+            </div>
+
+            <div class="form-request__inputs">
+              <label class="input-box form__item input-box--big">
+                <div class="input-box__head">
+                  <p class="p4">Коментарий</p>
+                </div>
+
+                <div class="input-box__block">
+                  <textarea
+                    type="text"
+                    placeholder="Коментарий..."
+                    name="comment"
+                  ></textarea>
+                </div>
+              </label>
+            </div>
+
+            <footer class="form-request__footer">
+              <div class="textbox">
+                <p class="p4">
+                  Нажимая на кнопку я принимаю условия обработки данных и
+                  политику конфиденциальности
+                </p>
+              </div>
+
+              <button class="button" type="submit">
+                <span class="p3 bold-font">Оставить заявку</span>
+
+                <span class="icon">
+                  <svg>
+                    <use xlink:href="#arrow-line-right-icon"></use>
+                  </svg>
+                </span>
+              </button>
+            </footer>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom__item">
+          <a
+            class="logo"
+            href="/"
+            aria-label="Перейти на главную страницу завода Метакон"
+            title="Главная страница"
+          >
+            <div class="logo__img icon">
+              <svg>
+                <use xlink:href="#logo-white-icon"></use>
+              </svg>
+            </div>
+          </a>
+
+          <ul class="footer-bottom__item-list">
+            <li class="footer-bottom__item-link">
+              <div class="footer-bottom__item-box">
+                <p class="p4">
+                  © Производственная компания «МК+», 2019-2025. Все права
+                  защищены.
+                </p>
+              </div>
+            </li>
+
+            <li class="footer-bottom__item-link">
+              <div class="footer-bottom__item-box">
+                <p class="p4">Адрес:</p>
+
+                <a
+                  href="https://yandex.ru/maps/11108/perm-krai/house/shosse_kosmonavtov_328b_1/YU8Ydg9kSk0EQFttfXV0cH9jYw==/?ll=56.084384%2C57.951307&z=17"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  aria-label="Перейти по адресу: Пермский край, Шоссе Космонавтов, 328/б. Откроется в новом окне."
+                  title="Пермский край, Шоссе Космонавтов, 328/б"
+                  class="p4"
+                  >Пермский край, Шоссе Космонавтов, 328/б</a
+                >
+              </div>
+            </li>
+
+            <li class="footer-bottom__item-link">
+              <div class="footer-bottom__item-box">
+                <p class="p4">ПН-ЧТ 9.00 - 18.00</p>
+
+                <p class="p4">ПТ 9.00 - 17.00</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom__item">
+          <div class="footer__list-box">
+            <p class="p3 uppercase-text">О нас</p>
+
+            <ul class="footer__list">
+              <li class="footer__link">
+                <a
+                  href="#"
+                  title="Услуги"
+                  aria-label="Перейти на страницу Услуги"
+                  class="footer__item p3"
+                  >Услуги</a
+                >
+              </li>
+
+              <li class="footer__link">
+                <a
+                  href="#"
+                  title="Производство"
+                  aria-label="Перейти на страницу Производство"
+                  class="footer__item p3"
+                  >Производство</a
+                >
+              </li>
+
+              <li class="footer__link">
+                <a
+                  href="#"
+                  title="Блог"
+                  aria-label="Перейти на страницу Блог"
+                  class="footer__item p3"
+                  >Блог</a
+                >
+              </li>
+
+              <li class="footer__link">
+                <a
+                  href="#"
+                  title="Продукция"
+                  aria-label="Перейти на страницу Продукция"
+                  class="footer__item p3"
+                  >Продукция</a
+                >
+              </li>
+
+              <li class="footer__link">
+                <a
+                  href="#"
+                  title="Доставка"
+                  aria-label="Перейти на страницу Доставка"
+                  class="footer__item p3"
+                  >Доставка</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom__item">
+          <div class="footer__list-box">
+            <p class="p3 uppercase-text">Услуги</p>
+
+            <ul class="footer__list">
+              <li class="footer__link">
+                <a
+                  href="#"
+                  title="Строительство"
+                  aria-label="Перейти на страницу Строительство"
+                  class="footer__item p3"
+                  >Строительство</a
+                >
+              </li>
+
+              <li class="footer__link">
+                <a
+                  href="#"
+                  title="Монтажно-сварочные работы"
+                  aria-label="Перейти на страницу Монтажно-сварочные работы"
+                  class="footer__item p3"
+                  >Монтажно-сварочные работы</a
+                >
+              </li>
+
+              <li class="footer__link">
+                <a
+                  href="#"
+                  title="Сверление отверстий в металле"
+                  aria-label="Перейти на страницу Сверление отверстий в металле"
+                  class="footer__item p3"
+                  >Сверление отверстий в металле</a
+                >
+              </li>
+
+              <li class="footer__link">
+                <a
+                  href="#"
+                  title="Резка листового металла"
+                  aria-label="Перейти на страницу Резка листового металла"
+                  class="footer__item p3"
+                  >Резка листового металла</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom__item">
+          <div class="footer__list-box">
+            <p class="p3 uppercase-text">Продукция</p>
+
+            <ul class="footer__list">
+              <li class="footer__link">
+                <a
+                  href="#"
+                  title="Промышленные металлоконструкции"
+                  aria-label="Перейти на страницу Промышленные металлоконструкции"
+                  class="footer__item p3"
+                  >Промышленные металлоконструкции</a
+                >
+              </li>
+
+              <li class="footer__link">
+                <a
+                  href="#"
+                  title="Арматурные изделия "
+                  aria-label="Перейти на страницу Арматурные изделия "
+                  class="footer__item p3"
+                  >Арматурные изделия
+                </a>
+              </li>
+
+              <li class="footer__link">
+                <a
+                  href="#"
+                  title="Закладные детали и анкера"
+                  aria-label="Перейти на страницу Закладные детали и анкера"
+                  class="footer__item p3"
+                  >Закладные детали и анкера</a
+                >
+              </li>
+
+              <li class="footer__link">
+                <a
+                  href="#"
+                  title="Ограждающие конструкции "
+                  aria-label="Перейти на страницу Ограждающие конструкции "
+                  class="footer__item p3"
+                  >Ограждающие конструкции
+                </a>
+              </li>
+
+              <li class="footer__link">
+                <a
+                  href="#"
+                  title="Контейнерные площадки для ТБО "
+                  aria-label="Перейти на страницу Контейнерные площадки для ТБО "
+                  class="footer__item p3"
+                  >Контейнерные площадки для ТБО
+                </a>
+              </li>
+
+              <li class="footer__link">
+                <a
+                  href="#"
+                  title="Металлические уголки "
+                  aria-label="Перейти на страницу Металлические уголки "
+                  class="footer__item p3"
+                  >Металлические уголки
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        <div class="footer-copy__info">
+          <ul class="footer-copy__list">
+            <li class="footer-copy__link">
+              <div class="footer-copy__item">
+                <a
+                  aria-label="Перейти на страницу Карта сайта"
+                  title="Карта сайта"
+                  href="#"
+                  class="p4"
+                  >Карта сайта</a
+                >
+              </div>
+            </li>
+
+            <li class="footer-copy__link">
+              <div class="footer-copy__item">
+                <a
+                  aria-label="Перейти на страницу Политика конфиденциальности"
+                  title="Политика конфиденциальности"
+                  href="#"
+                  class="p4"
+                  >Политика конфиденциальности</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-copy__info">
+          <div class="footer-copy__dev">
+            <p class="bold-font">Разработка сайта</p>
+
+            <a
+              href="https://alab.su/"
+              title="Alab studio"
+              aria-label="Перейти на сайт рекламодателя"
+              class="footer-copy__dev-logo"
+            >
+              <img src="/img/logos/alab.png" alt="логотип Alab studio" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/lib/imask.min.js"></script>
+<script src="/js/page.js" type="module"></script>

@@ -1,0 +1,67 @@
+html {
+  --white-color: #ffffff;
+
+  --dark-color-100: #000000;
+  --dark-color-150: #0000004d;
+  --dark-color-200: #303030;
+  --dark-color-300: #050505;
+  --dark-color-400: #222222;
+  --dark-color-500: #585858;
+
+  --gray-color-100: #ffffff;
+  --gray-color-140: #ffffff66;
+  --gray-color-160: #ffffff99;
+  --gray-color-170: #ffffffb2;
+  --gray-color-200: #f1f1f2;
+  --gray-color-300: #81817f;
+  --gray-color-400: #cfd4dc;
+  --gray-color-500: #a9a9a9;
+  --gray-color-600: #c1c1c1;
+  --gray-color-700: #adadad;
+
+  --primary-color-100: #ec6548;
+  --primary-color-200: #ff795c;
+
+  --red-color-100: #ff0000;
+
+  --font-main: "Onest", sans-serif;
+
+  --weight-font-main: 400;
+  --weight-font-md: 500;
+  --weight-font-lg: 600;
+  --weight-font-xl: 700;
+
+  --font-size-little: #{calculate-clamp(12px, 12px, 1023px, 480px)};
+  --font-size-small: #{calculate-clamp(14px, 14px, 1023px, 480px)};
+  --font-size-xs: #{calculate-clamp(15px, 16px, 1023px, 480px)};
+  --font-size-sm: #{calculate-clamp(16px, 18px, 1023px, 480px)};
+  --font-size-base: #{calculate-clamp(18px, 21px, 1023px, 480px)};
+  --font-size-md: #{calculate-clamp(18px, 24px, 1023px, 480px)};
+  --font-size-lg: #{calculate-clamp(20px, 32px, 1023px, 480px)};
+  --font-size-xl: #{calculate-clamp(24px, 40px, 1023px, 480px)};
+  --font-size-2xl: #{calculate-clamp(24px, 56px, 1023px, 480px)};
+  --font-size-3xl: #{calculate-clamp(30px, 74px, 1023px, 480px)};
+
+  --line-height-tighter: 1;
+  --line-height-tight: 1.2;
+  --line-height-base: 1.26;
+  --line-height-relaxed: 1.42;
+  --line-height-loose: 1.5;
+  --line-height-looser: 1.66;
+  --line-height-loosest: 1.75;
+
+  --radius-sm: 4px;
+  --radius-base: 8px;
+  --radius-md: 12px;
+  --radius-lg: 14px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+  --radius-3xl: 24px;
+  --radius-4xl: 28px;
+  --radius-5xl: 32px;
+
+  --container-inline-padding: #{calculate-clamp(20px, 40px, 1024px, 767px)};
+  --container-width: calc(1270px + calc(var(--container-inline-padding) * 2));
+
+  --gap-blocks: #{calculate-clamp(60px, 100px, 1024px, 480px)};
+}

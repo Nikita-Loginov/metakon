@@ -1,0 +1,48 @@
+.list-custom {
+  list-style: none;
+  counter-reset: list-custom;
+
+  &__card {
+    counter-increment: list-custom 1;
+
+    &:nth-child(-n + 9) {
+      .list-custom {
+        &__number {
+          &:before {
+            content: "[0" counter(list-custom) "]";
+          }
+        }
+      }
+    }
+  }
+
+  &__number {
+    position: relative;
+
+    &:before {
+      content: "[" counter(list-custom) "]";
+    }
+  }
+
+  &--default {
+    .list-custom {
+      &__card {
+        &:nth-child(-n + 9) {
+          .list-custom {
+            &__number {
+              &:before {
+                content: counter(list-custom);
+              }
+            }
+          }
+        }
+      }
+
+      &__number {
+        &:before {
+          content: counter(list-custom);
+        }
+      }
+    }
+  }
+}

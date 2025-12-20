@@ -1,0 +1,12 @@
+.arrows-swiper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &__arrow {
+    &.swiper-button-disabled {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+  }
+}
