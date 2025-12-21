@@ -187,5 +187,9 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px 24px;
+
+    &--four {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 }

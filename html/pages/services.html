@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('../modules/head.html', { "title" : "Услуги", "links" :
+  ["./css/services.css", "./css/lib/swiper.min.css", "./css/lib/fancybox.css"]})
+  <body>
+    <div class="wrapper">
+      @@include('../modules/header.html')
+
+      <main class="main">
+        <section class="top top--gradient">
+          <div class="container">
+            <div class="top__inner">
+              <div class="top__content">
+                <div class="top__content-info">
+                  <div class="breadcrumbs">
+                    <div class="swiper swiper--breadcrumbs">
+                      <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                          <a
+                            href="/index.html"
+                            title="Главная"
+                            aria-label="Перейти на страницу Главная"
+                            class="breadcrumbs__item p4"
+                          >
+                            Главная
+                          </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                          <div class="breadcrumbs__item p4">Услуги</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <h1 class="h1">Услуги</h1>
+
+                  <div class="textbox">
+                    <p class="p2">
+                      Компания «Метакон Плюс» специализируется на раскрое
+                      листового металла (гильотина, плазменная и газовая резка
+                      ЧПУ), сверлении отверстий и сварочно-монтажных работах.
+                    </p>
+
+                    <p class="p2">
+                      Мы выполняем монтаж и сварку любой сложности, включая
+                      работы на высоте. Наши специалисты разрабатывают чертежи
+                      для точного изготовления металлоконструкций.
+                    </p>
+                  </div>
+                </div>
+
+                @@include('../modules/btns/order.html')
+              </div>
+            </div>
+          </div>
+
+          <div class="top__img">
+            <picture>
+              <source srcset="/img/top/four.webp 1x, /img/top/four2x.webp 2x" />
+              <img src="/img/top/four.webp" alt="фотография" />
+            </picture>
+          </div>
+        </section>
+
+        <section class="info">
+          <div class="container">
+            <div class="info__inner">
+              <div class="info__content">
+                <h2 class="h2">О цехе</h2>
+
+                <div class="textbox">
+                  <p class="p3">
+                    Монтаж металлоконструкций является процессом установки
+                    металлических элементов, соединенных между собой. Монтажная
+                    сварка проводится в условиях стесненности на рабочем месте,
+                    необходимости постоянного и многократного перемещения
+                    рабочих инструментов. Эти особенности понижают
+                    производительность труда сварщиков. Но при правильном
+                    подходе к организации данных работ, а также при следовании
+                    нормативным документам, можно многократно повысить
+                    производительность и снизить риск получения травмы при
+                    выполнении сварки на высоте.
+                  </p>
+
+                  <p class="p3">
+                    Монтаж металлоконструкций является процессом установки
+                    металлических элементов, соединенных между собой. Монтажная
+                    сварка проводится в условиях стесненности на рабочем месте,
+                    необходимости постоянного и многократного перемещения
+                    рабочих инструментов. Эти особенности понижают
+                    производительность труда сварщиков.
+                  </p>
+                </div>
+              </div>
+
+              <div class="info__images">
+                <div class="info__img">
+                  <picture>
+                    <source
+                      srcset="
+                        /img/services/one.webp   1x,
+                        /img/services/one2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="/img/services/one.webp"
+                      alt="фотография"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+
+                <div class="info__img info__img--big">
+                  <picture>
+                    <source
+                      srcset="
+                        /img/services/one.webp   1x,
+                        /img/services/one2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="/img/services/one.webp"
+                      alt="фотография"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+
+                <div class="info__img">
+                  <picture>
+                    <source
+                      srcset="
+                        /img/services/one.webp   1x,
+                        /img/services/one2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="/img/services/one.webp"
+                      alt="фотография"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="services">
+          <div class="container">
+            <div class="topBox">
+              <div class="services__inner">
+                <div class="services__items">
+                  <a
+                    href="#"
+                    aria-label="Перейти на страницу Услуги"
+                    title="Монтажно-сварочные работы"
+                    class="card-detail big"
+                  >
+                    <div class="card-detail__img">
+                      <picture>
+                        <source
+                          srcset="
+                            /img/services/one.webp   1x,
+                            /img/services/one2x.webp 2x
+                          "
+                        />
+                        <img
+                          src="/img/services/one.webp"
+                          alt="фотография услуги"
+                        />
+                      </picture>
+                    </div>
+
+                    <div class="card-detail__content">
+                      <p class="p1 medium-font text-uppercase">
+                        Монтажно-сварочные работы
+                      </p>
+
+                      <span class="button button--cub">
+                        <span class="icon">
+                          <svg>
+                            <use xlink:href="#arrow-line-right-icon"></use>
+                          </svg>
+                        </span>
+                      </span>
+                    </div>
+                  </a>
+
+                  <a
+                    href="#"
+                    aria-label="Перейти на страницу Услуги"
+                    title="Газовая резка металла"
+                    class="card-detail middle"
+                  >
+                    <div class="card-detail__img">
+                      <picture>
+                        <source
+                          srcset="
+                            /img/services/two.webp   1x,
+                            /img/services/two2x.webp 2x
+                          "
+                        />
+                        <img
+                          src="/img/services/two.webp"
+                          alt="фотография услуги"
+                        />
+                      </picture>
+                    </div>
+
+                    <div class="card-detail__content">
+                      <p class="p1 medium-font text-uppercase">
+                        Газовая резка металла
+                      </p>
+
+                      <span class="button button--cub">
+                        <span class="icon">
+                          <svg>
+                            <use xlink:href="#arrow-line-right-icon"></use>
+                          </svg>
+                        </span>
+                      </span>
+                    </div>
+                  </a>
+
+                  <a
+                    href="#"
+                    aria-label="Перейти на страницу Услуги"
+                    title="строительство"
+                    class="card-detail middle"
+                  >
+                    <div class="card-detail__img">
+                      <picture>
+                        <source
+                          srcset="
+                            /img/services/three.webp   1x,
+                            /img/services/three2x.webp 2x
+                          "
+                        />
+                        <img
+                          src="/img/services/three.webp"
+                          alt="фотография услуги"
+                        />
+                      </picture>
+                    </div>
+
+                    <div class="card-detail__content">
+                      <p class="p1 medium-font text-uppercase">строительство</p>
+
+                      <span class="button button--cub">
+                        <span class="icon">
+                          <svg>
+                            <use xlink:href="#arrow-line-right-icon"></use>
+                          </svg>
+                        </span>
+                      </span>
+                    </div>
+                  </a>
+
+                  <a
+                    href="#"
+                    aria-label="Перейти на страницу Услуги"
+                    title="Резка листового металла"
+                    class="card-detail big"
+                  >
+                    <div class="card-detail__img">
+                      <picture>
+                        <source
+                          srcset="
+                            /img/services/four.webp   1x,
+                            /img/services/four2x.webp 2x
+                          "
+                        />
+                        <img
+                          src="/img/services/four.webp"
+                          alt="фотография услуги"
+                        />
+                      </picture>
+                    </div>
+
+                    <div class="card-detail__content">
+                      <p class="p1 medium-font text-uppercase">
+                        Резка листового металла
+                      </p>
+
+                      <span class="button button--cub">
+                        <span class="icon">
+                          <svg>
+                            <use xlink:href="#arrow-line-right-icon"></use>
+                          </svg>
+                        </span>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        @@include('../modules/partners.html')
+
+        @@include('../modules/documents.html')
+      </main>
+
+      @@include('../modules/footer.html')
+    </div>
+
+    <script src="/js/lib/swiper.min.js"></script>
+    <script src="/js/lib/fancybox.umd.js"></script>
+    <script src="/js/services.js" type="module"></script>
+  </body>
+</html>
