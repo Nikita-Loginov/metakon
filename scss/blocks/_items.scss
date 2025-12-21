@@ -28,11 +28,11 @@
   }
 
   &--gray {
-    border-color: #0000004d;
+    border-color: var(--dark-color-150);
 
     &:not(:last-child) {
       &:before {
-        background-color: #0000004d;
+        background-color: var(--dark-color-150);
       }
     }
   }

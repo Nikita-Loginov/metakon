@@ -1,0 +1,13 @@
+.workshops {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}

@@ -1,3 +1,5 @@
+import { toggleActiveEl } from "../modules/changeSwiper.js";
+
 const MOUSE_WHEEL_CONFIG = {
   enabled: true,
   forceToAxis: true,
@@ -38,6 +40,49 @@ export const SWIPERS = {
       navigation: {
         nextEl: ".gallery .arrows-swiper__arrow.next",
         prevEl: ".gallery .arrows-swiper__arrow.prev",
+      },
+    },
+  },
+  BREADCRUMBS: {
+    selector: ".breadcrumbs .swiper--breadcrumbs",
+    breakpoint: 122300000000,
+    options: {
+      slidesPerView: "auto",
+      spaceBetween: 0,
+      mousewheel: MOUSE_WHEEL_CONFIG,
+    },
+  },
+  WORKSHOP: {
+    selector: ".equipment .swiper--equipment",
+    breakpoint: 122300000000,
+    options: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      mousewheel: MOUSE_WHEEL_CONFIG,
+      navigation: {
+        nextEl: ".equipment .arrows-swiper__arrow.next",
+        prevEl: ".equipment .arrows-swiper__arrow.prev",
+      },
+    },
+    events: {
+      slideChange: (swiper) => {
+        toggleActiveEl(swiper.realIndex, "swiper", swiper.el);
+      },
+      init: (swiper) => {
+        toggleActiveEl(swiper.realIndex, "swiper", swiper.el);
+      },
+    },
+  },
+  SERVICES: {
+    selector: ".services .swiper--services",
+    breakpoint: 122300000000,
+    options: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+      mousewheel: MOUSE_WHEEL_CONFIG,
+      navigation: {
+        nextEl: ".services .arrows-swiper__arrow.next",
+        prevEl: ".services .arrows-swiper__arrow.prev",
       },
     },
   },

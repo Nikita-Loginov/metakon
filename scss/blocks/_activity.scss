@@ -1,0 +1,13 @@
+.activity {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}

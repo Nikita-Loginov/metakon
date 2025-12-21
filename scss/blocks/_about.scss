@@ -1,4 +1,25 @@
 .about {
+  &--second {
+    .about {
+      &__inner {
+        padding: 40px;
+      }
+
+      &__content {
+        padding: 0;
+      }
+
+      &__info {
+        max-width: 380px;
+        margin-left: auto;
+      }
+
+      &__img {
+        max-height: 340px;
+      }
+    }
+  }
+
   &__inner {
     background-color: var(--gray-color-100);
     display: flex;

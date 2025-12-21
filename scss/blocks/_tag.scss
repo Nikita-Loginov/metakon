@@ -16,3 +16,10 @@ a.tag {
     color: var(--gray-color-100);
   }
 }
+
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}

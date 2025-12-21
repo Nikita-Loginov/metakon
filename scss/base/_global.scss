@@ -37,10 +37,22 @@ body {
     &.section-padding {
       padding: var(--gap-blocks) 0;
       margin: 0;
+
+      & + section {
+        padding-top: var(--gap-blocks);
+      }
     }
 
     &.section-padding-top {
       padding-top: var(--gap-blocks);
+    }
+  }
+
+  &--noMarginLast {
+    section {
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -162,4 +174,18 @@ body {
   -webkit-box-orient: vertical;
   line-clamp: 2;
   box-orient: vertical;
+}
+
+.section-box {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 24px;
+  }
 }

@@ -1,0 +1,35 @@
+.numbers {
+  background-color: var(--gray-color-100);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 48px;
+
+    .card-info {
+      padding: 18px 0;
+    }
+
+    .items-decor-card {
+      &:nth-child(even) {
+        position: relative;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}

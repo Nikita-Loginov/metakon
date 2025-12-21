@@ -1,0 +1,46 @@
+.breadcrumbs {
+  .swiper-slide {
+    width: fit-content;
+
+    &:not(:last-child) {
+      .breadcrumbs {
+        &__item {
+          padding-right: 26px;
+          color: var(--gray-color-160);
+          transition: all 0.3s;
+
+          &:hover {
+            color: var(--gray-color-100);
+          }
+
+          &:after {
+            position: absolute;
+            content: "";
+            width: 16px;
+            height: 2px;
+            background-color: var(--primary-color-100);
+            right: 0;
+          }
+        }
+      }
+    }
+
+    &:not(:first-child) {
+      .breadcrumbs {
+        &__item {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+
+  .swiper-wrapper {
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

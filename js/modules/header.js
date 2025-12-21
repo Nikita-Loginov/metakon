@@ -1,7 +1,7 @@
 const CONFIG = {
   CLASS_SCROLL_TOP: "scrollTop",
   CLASS_SCROLL_BOTTOM: "scrollBottom",
-  SCROLL_START_MORE: 10,
+  SCROLL_START_MORE: 100,
   SCROLL_THRESHOLD: 5,
 };
 

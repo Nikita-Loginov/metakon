@@ -46,3 +46,29 @@
     }
   }
 }
+
+.list-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 19px;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 2px;
+      background-color: var(--dark-color-200);
+      left: 0;
+      top: 40%;
+      // transform: translateY(-50%);
+    }
+  }
+}

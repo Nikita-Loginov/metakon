@@ -9,7 +9,7 @@
     .items-decor {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 48px;
+      gap: 20px 48px;
 
       .items-decor-card {
         &:nth-child(5) {

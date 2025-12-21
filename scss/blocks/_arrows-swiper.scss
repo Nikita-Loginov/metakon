@@ -9,4 +9,11 @@
       pointer-events: none;
     }
   }
+
+  &--absolute {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    z-index: 10;
+  }
 }
