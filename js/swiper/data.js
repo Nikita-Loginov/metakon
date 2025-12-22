@@ -86,4 +86,21 @@ export const SWIPERS = {
       },
     },
   },
+  IMG_SWIPER_DETAIL: {
+    selector: ".detail .swiper--detail",
+    breakpoint: 122300000000,
+    options: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".detail .arrows-swiper__arrow.next",
+        prevEl: ".detail .arrows-swiper__arrow.prev",
+      },
+      pagination: {
+        el: ".detail .swiper-pagination",
+        type: "fraction",
+      },
+      mousewheel: MOUSE_WHEEL_CONFIG,
+    },
+  },
 };

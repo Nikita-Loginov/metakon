@@ -1,0 +1,91 @@
+.detail__inner {
+  display: grid;
+  grid-template-columns: auto 403px;
+  gap: clamp(30px, 5.4676258993px + 2.3980815348vw, 40px);
+}
+.detail__info {
+  width: 100%;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: clamp(32px, 12.3741007194px + 1.9184652278vw, 40px);
+  background-color: var(--gray-color-100);
+  min-width: 0;
+  width: 100%;
+}
+.detail__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.detail__item-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.detail__swiper-box {
+  width: 100%;
+  min-width: 0;
+  position: relative;
+}
+.detail__banners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.detail__banner {
+  padding: clamp(16px, 8.9281767956px + 1.4732965009vw, 24px);
+  background-color: var(--gray-color-100);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.detail__banner--sticky {
+  position: sticky;
+  top: calc(var(--header-height, 117px) + 20px);
+}
+.detail__img {
+  width: 100%;
+  height: 390px;
+}
+.detail__img--big {
+  height: 624px;
+}
+.detail__img img,
+.detail__img svg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body.scrollBottom .detail__banner--sticky {
+  top: 20px;
+}

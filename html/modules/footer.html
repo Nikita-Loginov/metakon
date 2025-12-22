@@ -142,7 +142,7 @@
                 </p>
               </div>
 
-              <button class="button" type="submit">
+              <button class="button modal-open" type="submit" data-modal="successModal">
                 <span class="p3 bold-font">Оставить заявку</span>
 
                 <span class="icon">
@@ -429,6 +429,11 @@
     </div>
   </div>
 </footer>
+
+@@include('../modules/cookies.html')
+@@include('../modules/modals/request.html')
+@@include('../modules/modals/message.html')
+@@include('../modules/modals/success.html')
 
 <script src="/js/lib/imask.min.js"></script>
 <script src="/js/page.js" type="module"></script>

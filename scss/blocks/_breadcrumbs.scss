@@ -34,6 +34,22 @@
     }
   }
 
+  &--dark {
+    .swiper-slide {
+      &:not(:last-child) {
+        .breadcrumbs {
+          &__item {
+            color: var(--dark-color-180);
+
+            &:hover {
+              color: var(--dark-color-200);
+            }
+          }
+        }
+      }
+    }
+  }
+
   .swiper-wrapper {
     align-items: center;
   }

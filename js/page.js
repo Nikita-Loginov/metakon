@@ -5,6 +5,7 @@ import { toggleAccordeonItems } from "./modules/accordeon.js";
 import { initMenu } from "./modules/menu.js";
 import { handleAllSliders, slidersConfig } from "./modules/swiper.js";
 import { SWIPERS } from "./swiper/data.js";
+import { checkStorage, initStorage } from "./modules/localStorage.js";
 
 const swipers = [
   {
@@ -16,6 +17,7 @@ const handleGlobalClick = (e) => {
   initModal(e);
   toggleAccordeonItems(e);
   initMenu(e);
+  initStorage(e);
 };
 
 const initValidate = () => {
@@ -39,6 +41,7 @@ const initGlobalSwiper = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+  checkStorage();
   checkStartOpen();
   getHeightHeader();
   initValidate();

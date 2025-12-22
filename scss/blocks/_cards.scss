@@ -251,3 +251,36 @@ a.card-detail {
     padding: 24px;
   }
 }
+
+.card-line {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 24px;
+  border-left: 2px solid var(--primary-color-100);
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.card-default {
+  padding: 32px;
+  background-color: var(--gray-color-100);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  &__content,
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+}

@@ -1,0 +1,124 @@
+<div class="modalBlock requestModal">
+  <div class="modalBlock__inner requestModal__inner">
+    <div class="modalBlock__header">
+      <div class="line-decor"></div>
+
+      <button class="modalBlock__header-close modal-close">
+       <div class="icon">
+        <svg>
+            <use xlink:href="#close-icon"></use>
+          </svg>
+       </div>
+      </button>
+    </div>
+
+    <div class="modalBlock__content">
+      <form novalidate class="form-request form-request--white form">
+        <p class="h4">Связаться с нами</p>
+
+        <div class="form-request__inputs">
+          <label class="input-box form__item">
+            <div class="input-box__head">
+              <p class="p4 uppercase-text">ФИО</p>
+            </div>
+
+            <div class="input-box__block">
+              <input
+                type="text"
+                placeholder="Иванов Иван Иванович"
+                name="fio"
+                required
+                minlength="1"
+                pattern="[А-Яа-яЁё\s\-]+"
+                data-title="Пожалуйста, введите корректное ФИО (только русские буквы, пробелы и дефисы)"
+                data-empty="Введите минимум 1 символ"
+                aria-errormessage="fio-errors"
+              />
+            </div>
+
+            <div class="input-box__errors form__errors" id="fio-errors"></div>
+          </label>
+
+          <label class="input-box form__item">
+            <div class="input-box__head">
+              <p class="p4 uppercase-text">Телефон</p>
+            </div>
+
+            <div class="input-box__block">
+              <input
+                type="tel"
+                placeholder="+7 9__ ___ __ __"
+                name="tel"
+                required
+                minlength="1"
+                pattern="^\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$"
+                data-title="Введите телефон в формате: +7 (900) 000-00-00"
+                data-empty="Ведите минимум один символ"
+                aria-errormessage="tel-errors"
+              />
+            </div>
+
+            <div class="input-box__errors form__errors" id="tel-errors"></div>
+          </label>
+
+          <label class="input-box form__item">
+            <div class="input-box__head">
+              <p class="p4 uppercase-text">Почта</p>
+            </div>
+
+            <div class="input-box__block">
+              <input
+                type="email"
+                name="email"
+                minlength="1"
+                required=""
+                pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                data-title="Введите корректный email адрес"
+                data-empty="Ведите минимум один символ"
+                aria-errormessage="email-errors"
+                placeholder="E-mail"
+              />
+            </div>
+
+            <div class="input-box__errors form__errors" id="email-errors"></div>
+          </label>
+        </div>
+
+        <div class="form-request__inputs">
+          <label class="input-box form__item input-box--big">
+            <div class="input-box__head">
+              <p class="p4">Коментарий</p>
+            </div>
+
+            <div class="input-box__block">
+              <textarea
+                type="text"
+                placeholder="Коментарий..."
+                name="comment"
+              ></textarea>
+            </div>
+          </label>
+        </div>
+
+        <footer class="form-request__footer form-request__footer--column">
+          <div class="textbox">
+            <p class="p4">
+              Нажимая на кнопку я принимаю условия обработки данных и политику
+              конфиденциальности
+            </p>
+          </div>
+
+          <button class="button modal-open" type="submit" data-modal="successModal">
+            <span class="p3 bold-font">Оставить заявку</span>
+
+            <span class="icon">
+              <svg>
+                <use xlink:href="#arrow-line-right-icon"></use>
+              </svg>
+            </span>
+          </button>
+        </footer>
+      </form>
+    </div>
+  </div>
+</div>

@@ -15,6 +15,11 @@
     justify-content: space-between;
   }
 
+  &--dark {
+    background-color: var(--dark-color-200);
+    color: var(--gray-color-100);
+  }
+
   .icon {
     width: 16px;
     height: 16px;

@@ -381,6 +381,42 @@
       fill="currentColor"
     />
   </symbol>
+
+  <symbol id="support-icon" viewBox="0 0 18 18" fill="none">
+    <path
+      xmlns="http://www.w3.org/2000/svg"
+      d="M9 18C7.21997 18 5.47991 17.4722 3.99987 16.4832C2.51982 15.4943 1.36627 14.0887 0.685083 12.4442C0.00389481 10.7996 -0.174335 8.99002 0.172932 7.24419C0.520199 5.49836 1.37737 3.89472 2.63604 2.63604C3.89471 1.37737 5.49836 0.520204 7.24419 0.172937C8.99002 -0.17433 10.7996 0.00389957 12.4442 0.685088C14.0887 1.36628 15.4943 2.51983 16.4832 3.99987C17.4722 5.47991 18 7.21997 18 9C17.9974 11.3862 17.0484 13.6738 15.3611 15.3611C13.6738 17.0484 11.3862 17.9974 9 18ZM9 3.75C8.7775 3.75 8.55999 3.81598 8.37498 3.9396C8.18998 4.06322 8.04578 4.23892 7.96063 4.44449C7.87549 4.65005 7.85321 4.87625 7.89662 5.09448C7.94002 5.31271 8.04717 5.51316 8.2045 5.6705C8.36184 5.82783 8.56229 5.93498 8.78052 5.97839C8.99875 6.0218 9.22495 5.99952 9.43052 5.91437C9.63609 5.82922 9.81179 5.68503 9.9354 5.50002C10.059 5.31502 10.125 5.09751 10.125 4.875C10.125 4.57664 10.0065 4.29049 9.7955 4.07951C9.58452 3.86853 9.29837 3.75 9 3.75ZM9.75 7.5H9C8.60217 7.5 8.22064 7.65804 7.93934 7.93934C7.65803 8.22065 7.5 8.60218 7.5 9V13.5C7.5 13.6989 7.57902 13.8897 7.71967 14.0303C7.86032 14.171 8.05109 14.25 8.25 14.25C8.44891 14.25 8.63968 14.171 8.78033 14.0303C8.92098 13.8897 9 13.6989 9 13.5V9H9.75C9.94891 9 10.1397 8.92099 10.2803 8.78033C10.421 8.63968 10.5 8.44892 10.5 8.25C10.5 8.05109 10.421 7.86033 10.2803 7.71967C10.1397 7.57902 9.94891 7.5 9.75 7.5Z"
+      fill="#EC6548"
+    />
+  </symbol>
+
+  <symbol id="arrow-right-icon" viewBox="0 0 5 8" fill="none">
+    <path
+      xmlns="http://www.w3.org/2000/svg"
+      d="M1 7L4 4L1 1"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </symbol>
+
+  <symbol id="close-icon" viewBox="0 0 24 24" fill="none">
+    <path
+      d="M18 6L6 18"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M6 6L18 18"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </symbol>
 </svg>
 
 
@@ -632,7 +668,7 @@
         </div>
 
         <div class="header-bottom__details">
-          <button class="button button--small" type="button">
+          <button class="button button--small modal-open" type="button" data-modal="messageModal">
             <p class="p3 bold-font">Обратный звонок</p>
           </button>
         </div>
@@ -642,7 +678,7 @@
 </header>
 
 
-      <main class="main">
+      <main class="main main--paddingBig">
         <section class="allPages">
           <div class="container">
             <div class="allPages__inner">
@@ -655,7 +691,7 @@
                     class="allPages__item"
                     target="_blank"
                   >
-                    🐶 Главная(кликабельно)
+                    🐶 Главная(кликабельно)(без адаптива)
                   </a>
                 </li>
 
@@ -667,7 +703,7 @@
                     class="allPages__item"
                     target="_blank"
                   >
-                    🐭 О заводе(кликабельно)
+                    🐭 О заводе(кликабельно)(без адаптива)
                   </a>
                 </li>
 
@@ -679,7 +715,7 @@
                     class="allPages__item"
                     target="_blank"
                   >
-                    🐸 Страница цеха(кликабельно)
+                    🐸 Страница цеха(кликабельно)(без адаптива)
                   </a>
                 </li>
 
@@ -691,7 +727,7 @@
                     class="allPages__item"
                     target="_blank"
                   >
-                    🐔 Услуги(кликабельно)
+                    🐔 Услуги(кликабельно)(без адаптива)
                   </a>
                 </li>
 
@@ -703,7 +739,7 @@
                     class="allPages__item"
                     target="_blank"
                   >
-                    🐹 Услуга/продукция типовая(кликабельно)
+                    🐹 Услуга/продукция типовая(кликабельно)(без адаптива)
                   </a>
                 </li>
 
@@ -715,7 +751,79 @@
                     class="allPages__item"
                     target="_blank"
                   >
-                  🐬 Продукция(кликабельно)
+                    🐬 Продукция(кликабельно)(без адаптива)
+                  </a>
+                </li>
+
+                <li class="allPages__link">
+                  <a
+                    href="construction.html"
+                    aria-label="Перейти на Строительство"
+                    title="Строительство"
+                    class="allPages__item"
+                    target="_blank"
+                  >
+                    🐔 Строительство(кликабельно)(без адаптива)
+                  </a>
+                </li>
+
+                <li class="allPages__link">
+                  <a
+                    href="contact.html"
+                    aria-label="Перейти на Контакты"
+                    title="Контакты"
+                    class="allPages__item"
+                    target="_blank"
+                  >
+                    🦁 Контакты(кликабельно)(без адаптива)
+                  </a>
+                </li>
+
+                <li class="allPages__link">
+                  <a
+                    href="news.html"
+                    aria-label="Перейти на Новости и акции"
+                    title="Новости и акции"
+                    class="allPages__item"
+                    target="_blank"
+                  >
+                    🐝 Новости и акции(кликабельно)(без адаптива)
+                  </a>
+                </li>
+
+                <li class="allPages__link">
+                  <a
+                    href="gallery.html"
+                    aria-label="Перейти на Галерея работ"
+                    title="Галерея работ"
+                    class="allPages__item"
+                    target="_blank"
+                  >
+                    🐩 Галерея работ(кликабельно)(без адаптива)
+                  </a>
+                </li>
+
+                <li class="allPages__link">
+                  <a
+                    href="vacancies.html"
+                    aria-label="Перейти на Ваканскии"
+                    title="Ваканскии"
+                    class="allPages__item"
+                    target="_blank"
+                  >
+                    🐿️ Ваканскии(кликабельно)(без адаптива)
+                  </a>
+                </li>
+
+                <li class="allPages__link">
+                  <a
+                    href="detail.html"
+                    aria-label="Перейти на Деталку новости/акции"
+                    title="Деталка новости/акции"
+                    class="allPages__item"
+                    target="_blank"
+                  >
+                    🐮 Деталка новости/акции (кликабельно)(без адаптива)
                   </a>
                 </li>
 
@@ -727,7 +835,7 @@
                     class="allPages__item"
                     target="_blank"
                   >
-                    🐱 Шаблон(кликабельно)
+                    🐱 Шаблон(кликабельно)(без адаптива)
                   </a>
                 </li>
               </ul>
@@ -891,7 +999,7 @@
                 </p>
               </div>
 
-              <button class="button" type="submit">
+              <button class="button modal-open" type="submit" data-modal="successModal">
                 <span class="p3 bold-font">Оставить заявку</span>
 
                 <span class="icon">
@@ -1178,6 +1286,270 @@
     </div>
   </div>
 </footer>
+
+<div
+  class="cookies"
+  data-storage-key="cookies"
+  data-storage-type="localstorage"
+  data-storage-days="30"
+  data-storage-remove="true"
+  data-storage-value="true"
+>
+  <div class="cookies__box">
+    <p class="p4 medium-font">
+      Данный веб-сайт использует cookie-файлы с целью повышения удобства и
+      эффективности работы пользователя. Продолжая использовать сайт вы даете
+      согласие на обработку ваших персональных данных.
+    </p>
+
+    <button class="button" type="button" data-storage-close>Принять</button>
+  </div>
+</div>
+
+<div class="modalBlock requestModal">
+  <div class="modalBlock__inner requestModal__inner">
+    <div class="modalBlock__header">
+      <div class="line-decor"></div>
+
+      <button class="modalBlock__header-close modal-close">
+       <div class="icon">
+        <svg>
+            <use xlink:href="#close-icon"></use>
+          </svg>
+       </div>
+      </button>
+    </div>
+
+    <div class="modalBlock__content">
+      <form novalidate class="form-request form-request--white form">
+        <p class="h4">Связаться с нами</p>
+
+        <div class="form-request__inputs">
+          <label class="input-box form__item">
+            <div class="input-box__head">
+              <p class="p4 uppercase-text">ФИО</p>
+            </div>
+
+            <div class="input-box__block">
+              <input
+                type="text"
+                placeholder="Иванов Иван Иванович"
+                name="fio"
+                required
+                minlength="1"
+                pattern="[А-Яа-яЁё\s\-]+"
+                data-title="Пожалуйста, введите корректное ФИО (только русские буквы, пробелы и дефисы)"
+                data-empty="Введите минимум 1 символ"
+                aria-errormessage="fio-errors"
+              />
+            </div>
+
+            <div class="input-box__errors form__errors" id="fio-errors"></div>
+          </label>
+
+          <label class="input-box form__item">
+            <div class="input-box__head">
+              <p class="p4 uppercase-text">Телефон</p>
+            </div>
+
+            <div class="input-box__block">
+              <input
+                type="tel"
+                placeholder="+7 9__ ___ __ __"
+                name="tel"
+                required
+                minlength="1"
+                pattern="^\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$"
+                data-title="Введите телефон в формате: +7 (900) 000-00-00"
+                data-empty="Ведите минимум один символ"
+                aria-errormessage="tel-errors"
+              />
+            </div>
+
+            <div class="input-box__errors form__errors" id="tel-errors"></div>
+          </label>
+
+          <label class="input-box form__item">
+            <div class="input-box__head">
+              <p class="p4 uppercase-text">Почта</p>
+            </div>
+
+            <div class="input-box__block">
+              <input
+                type="email"
+                name="email"
+                minlength="1"
+                required=""
+                pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                data-title="Введите корректный email адрес"
+                data-empty="Ведите минимум один символ"
+                aria-errormessage="email-errors"
+                placeholder="E-mail"
+              />
+            </div>
+
+            <div class="input-box__errors form__errors" id="email-errors"></div>
+          </label>
+        </div>
+
+        <div class="form-request__inputs">
+          <label class="input-box form__item input-box--big">
+            <div class="input-box__head">
+              <p class="p4">Коментарий</p>
+            </div>
+
+            <div class="input-box__block">
+              <textarea
+                type="text"
+                placeholder="Коментарий..."
+                name="comment"
+              ></textarea>
+            </div>
+          </label>
+        </div>
+
+        <footer class="form-request__footer form-request__footer--column">
+          <div class="textbox">
+            <p class="p4">
+              Нажимая на кнопку я принимаю условия обработки данных и политику
+              конфиденциальности
+            </p>
+          </div>
+
+          <button class="button modal-open" type="submit" data-modal="successModal">
+            <span class="p3 bold-font">Оставить заявку</span>
+
+            <span class="icon">
+              <svg>
+                <use xlink:href="#arrow-line-right-icon"></use>
+              </svg>
+            </span>
+          </button>
+        </footer>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modalBlock messageModal">
+  <div class="modalBlock__inner messageModal__inner">
+    <div class="modalBlock__header">
+      <div class="line-decor"></div>
+
+      <button class="modalBlock__header-close modal-close">
+        <div class="icon">
+          <svg>
+            <use xlink:href="#close-icon"></use>
+          </svg>
+        </div>
+      </button>
+    </div>
+
+    <div class="modalBlock__content">
+      <form novalidate class="form-request form-request--white form">
+        <p class="h4">Обратный звонок</p>
+
+        <div class="form-request__inputs">
+          <label class="input-box form__item">
+            <div class="input-box__head">
+              <p class="p4 uppercase-text">ФИО</p>
+            </div>
+
+            <div class="input-box__block">
+              <input
+                type="text"
+                placeholder="Иванов Иван Иванович"
+                name="fio"
+                required
+                minlength="1"
+                pattern="[А-Яа-яЁё\s\-]+"
+                data-title="Пожалуйста, введите корректное ФИО (только русские буквы, пробелы и дефисы)"
+                data-empty="Введите минимум 1 символ"
+                aria-errormessage="fio-errors"
+              />
+            </div>
+
+            <div class="input-box__errors form__errors" id="fio-errors"></div>
+          </label>
+
+          <label class="input-box form__item">
+            <div class="input-box__head">
+              <p class="p4 uppercase-text">Телефон</p>
+            </div>
+
+            <div class="input-box__block">
+              <input
+                type="tel"
+                placeholder="+7 9__ ___ __ __"
+                name="tel"
+                required
+                minlength="1"
+                pattern="^\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}$"
+                data-title="Введите телефон в формате: +7 (900) 000-00-00"
+                data-empty="Ведите минимум один символ"
+                aria-errormessage="tel-errors"
+              />
+            </div>
+
+            <div class="input-box__errors form__errors" id="tel-errors"></div>
+          </label>
+        </div>
+
+        <footer class="form-request__footer form-request__footer--column">
+          <div class="textbox">
+            <p class="p4">
+              Нажимая на кнопку я принимаю условия обработки данных и политику
+              конфиденциальности
+            </p>
+          </div>
+
+          <button
+            class="button modal-open"
+            type="submit"
+            data-modal="successModal"
+          >
+            <span class="p3 bold-font">Оставить заявку</span>
+
+            <span class="icon">
+              <svg>
+                <use xlink:href="#arrow-line-right-icon"></use>
+              </svg>
+            </span>
+          </button>
+        </footer>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="modalBlock successModal">
+  <div class="modalBlock__inner successModal__inner">
+    <div class="modalBlock__header">
+      <div class="line-decor"></div>
+
+      <button class="modalBlock__header-close modal-close">
+        <div class="icon">
+          <svg>
+            <use xlink:href="#close-icon"></use>
+          </svg>
+        </div>
+      </button>
+    </div>
+
+    <div class="modalBlock__content">
+      <p class="h4">Ваша заявка успешно отправлена</p>
+
+      <div class="textbox">
+        <p class="p2">Мы скоро свяжемся с вами</p>
+      </div>
+
+      <button class="button modal-close">
+        <p class="p3 bold-font">Закрыть</p>
+      </button>
+    </div>
+  </div>
+</div>
+
 
 <script src="/js/lib/imask.min.js"></script>
 <script src="/js/page.js" type="module"></script>

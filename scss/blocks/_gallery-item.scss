@@ -11,6 +11,18 @@
     }
   }
 
+  &--big {
+    .gallery-item {
+      &__img {
+        height: 380px;
+      }
+
+      &__content {
+        gap: 8px;
+      }
+    }
+  }
+
   &__content {
     display: flex;
     flex-direction: column;

@@ -16,3 +16,32 @@
     }
   }
 }
+
+.swiper-pagination-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .swiper-pagination {
+    &.swiper-pagination-fraction {
+      background-color: var(--dark-color-450);
+      color: var(--gray-color-100);
+      padding: 5px 8px;
+      font-size: var(--font-size-little);
+      font-weight: var(--weight-font-lg);
+    }
+  }
+
+  &--absolute {
+    position: absolute;
+    z-index: 9;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &:has(.swiper-pagination.swiper-pagination-lock) {
+    display: none;
+  }
+}
+

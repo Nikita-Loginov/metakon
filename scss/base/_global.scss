@@ -34,6 +34,10 @@ body {
   section {
     margin-bottom: var(--gap-blocks);
 
+    &.small-gap {
+      margin-bottom: 40px;
+    }
+
     &.section-padding {
       padding: var(--gap-blocks) 0;
       margin: 0;
@@ -54,6 +58,10 @@ body {
         margin-bottom: 0;
       }
     }
+  }
+
+  &--paddingBig {
+    padding-top: calc(var(--header-height, 115px) + 40px);
   }
 }
 
@@ -110,6 +118,18 @@ body {
     align-items: flex-end;
     gap: 20px;
     justify-content: space-between;
+  }
+
+  &__content-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
 }
 
@@ -180,7 +200,7 @@ body {
   &__inner {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
   }
 
   &__items {
@@ -191,5 +211,34 @@ body {
     &--four {
       grid-template-columns: repeat(4, 1fr);
     }
+
+    &--two {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &--small-gap {
+      gap: 20px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__more {
+    margin: 0 auto;
+  }
+}
+
+.link-decor {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  .icon {
+    width: 10px;
+    height: 10px;
   }
 }

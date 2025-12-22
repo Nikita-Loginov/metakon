@@ -1,0 +1,90 @@
+.modalBlock {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background-color: var(--gray-color-170);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  max-height: 100dvh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+
+    .modalBlock {
+      &__inner {
+        transform: translate(0);
+      }
+    }
+  }
+
+  &__inner {
+    max-width: 90vw;
+    width: fit-content;
+    margin: 0 auto;
+    height: fit-content;
+    margin: auto 0;
+    transform: translateY(-400%);
+    transition: all 0.5s;
+    background-color: var(--dark-color-100);
+    padding: 32px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: var(--white-color);
+    gap: 40px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+  }
+
+  &__header-close {
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    color: var(--gray-color-140);
+
+    .icon {
+      width: 100%;
+      height: 100%;
+      transition: all 0.5s;
+
+      &:hover {
+        color: var(--gray-color-100);
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.requestModal,
+.messageModal{
+  &__inner {
+    max-width: 600px;
+    width: 100%;
+  }
+}
+
+.successModal {
+  &__inner {
+    max-width: 432px;
+    width: 100%;
+  }
+}
