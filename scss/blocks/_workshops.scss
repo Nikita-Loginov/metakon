@@ -8,6 +8,6 @@
   &__items {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: calculate-clamp(24px, 40px, 1280px, 480px);
   }
 }

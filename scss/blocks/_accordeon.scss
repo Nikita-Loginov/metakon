@@ -1,0 +1,26 @@
+.accordeon {
+  &__answer {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+
+  &__item {
+    &.open {
+      .arrow {
+        rotate: -180deg;
+      }
+
+      .accordeon {
+        &__answer {
+          padding-top: 15px;
+        }
+      }
+    }
+
+    .arrow {
+      transition: all 0.3s;
+    }
+  }
+}

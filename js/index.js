@@ -7,6 +7,9 @@ const swipers = [
     ...SWIPERS.STEPS_MAIN,
   },
   {
+    ...SWIPERS.ABOUT_NUMBER
+  },
+  {
     ...SWIPERS.DOCUMENTS_MAIN,
   },
   {

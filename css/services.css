@@ -14,14 +14,32 @@
 .services__items {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  gap: 24px;
+  gap: clamp(12px, -8.1842105263px + 2.6315789474vw, 24px);
 }
-.services__items > * {
-  grid-column: span 3;
+@media (min-width: 1280px) {
+  .services__items > * {
+    grid-column: span 3;
+  }
+  .services__items > *.big {
+    grid-column: span 6;
+  }
+  .services__items > *.middle {
+    grid-column: span 4;
+  }
 }
-.services__items > *.big {
-  grid-column: span 6;
+@media (max-width: 1279px) {
+  .services__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-.services__items > *.middle {
-  grid-column: span 4;
+@media (max-width: 767px) {
+  .services__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }

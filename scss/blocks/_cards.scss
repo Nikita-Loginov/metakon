@@ -10,9 +10,9 @@
 }
 
 .card-detail {
-  --padding-inline-card-detail: 32px;
+  --padding-inline-card-detail: #{calculate-clamp(20px, 32px, 1400px, 767px)};
 
-  min-height: 320px;
+  min-height: calculate-clamp(240px, 320px, 1400px, 767px);
   width: 100%;
   position: relative;
   background-color: var(--gray-color-140);
@@ -83,13 +83,13 @@ a.card-detail {
 }
 
 .card-list {
-  min-height: 320px;
+  min-height: calculate-clamp(240px, 320px, 1400px, 767px);
   position: relative;
   background-color: var(--gray-color-100);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 32px;
+  padding: calculate-clamp(16px, 32px, 1400px, 767px);
 
   &.swiper-slide {
     display: flex;
@@ -194,26 +194,22 @@ a.card-detail {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 10px;
-  padding: 20px 24px;
+
   overflow: hidden;
+  padding-top: 20px;
 
   &__header {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    position: relative;
-    z-index: 2;
+    padding-inline: 24px;
   }
 
   &__img {
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    bottom: 0;
-    max-width: 100%;
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: 223px;
 
     img,
     svg {
@@ -228,7 +224,7 @@ a.card-detail {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding-top: 16px;
+  padding-top: calculate-clamp(12px, 16px, 1280px, 480px);
   border-top: 2px solid var(--dark-color-100);
 
   &__content {
@@ -282,5 +278,4 @@ a.card-detail {
     gap: 8px;
     align-items: flex-start;
   }
-
 }

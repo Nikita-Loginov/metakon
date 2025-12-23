@@ -2,13 +2,13 @@
   &__inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: calculate-clamp(16px, 40px, 1280px, 480px);
   }
 
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: calculate-clamp(16px, 40px, 1280px, 480px);
   }
 
   &__images {
@@ -28,8 +28,27 @@
     }
 
     &--big {
-      height: 430px;
+      height: auto;
+      max-height: 500px;
       grid-row: span 2;
+    }
+  }
+
+  @media(max-width:1223px) {
+    &__inner {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media(max-width:600px) {
+    &__images {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__img {
+      height: 210px;
     }
   }
 }

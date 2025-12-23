@@ -79,16 +79,16 @@
   }
 
   &--cub {
-    width: 56px;
-    height: 56px;
+    width: calculate-clamp(40px, 56px, 1400px, 767px);
+    height: calculate-clamp(40px, 56px, 1400px, 767px);
     padding: 0;
     flex-shrink: 0;
     min-height: 0;
   }
 
   &--cub--small {
-    width: 48px;
-    height: 48px;
+    width: calculate-clamp(44px, 48px, 1400px, 767px);
+    height: calculate-clamp(44px, 48px, 1400px, 767px);
   }
 
   &.disabled {

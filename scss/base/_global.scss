@@ -19,6 +19,27 @@ body {
   &.open-modal {
     overflow: hidden;
   }
+
+  &:before {
+    content: "";
+    inset: 0;
+    background-color: var(--dark-color-180);
+    backdrop-filter: blur(10px);
+    z-index: 40;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+
+  &.open-decor {
+    &:before {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 }
 
 .wrapper {
@@ -97,12 +118,12 @@ body {
 .topBox {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: calculate-clamp(16px, 40px, 1223px, 767px);
 
   &__header {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: calculate-clamp(16px, 40px, 1223px, 767px);
   }
 
   &__header-content,
@@ -131,6 +152,22 @@ body {
     align-items: center;
     gap: 12px;
   }
+
+  @media (max-width: 767px) {
+    &__content {
+      display: contents;
+    }
+
+    &__info {
+      order:10000;
+      flex-direction: column;
+      align-items: normal;
+
+      .arrows-swiper {
+        margin: 0 auto;
+      }
+    }
+  }
 }
 
 .link-spread {
@@ -156,6 +193,10 @@ body {
     &::before {
       opacity: 1;
       visibility: visible;
+    }
+
+    .icon {
+      color: var(--primary-color-100);
     }
   }
 }
@@ -206,7 +247,7 @@ body {
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px 24px;
+    gap: calculate-clamp(16px, 32px, 1280px, 480px) calculate-clamp(16px, 24px, 1280px, 480px);
 
     &--four {
       grid-template-columns: repeat(4, 1fr);
@@ -218,6 +259,15 @@ body {
 
     &--small-gap {
       gap: 20px;
+    }
+
+    @media(max-width:1223px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width:767px) {
+      display: flex;
+      flex-direction: column;
     }
   }
 

@@ -16,5 +16,5 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 40px;
+  gap: clamp(24px, 14.4px + 2vw, 40px);
 }

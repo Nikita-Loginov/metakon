@@ -10,4 +10,30 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
   }
+
+  @media (max-width: 1279px) {
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+
+      .card-content {
+        &__img {
+          height: calculate-clamp(162px, 300px, 1280px, 480px);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__items {
+      display: flex;
+      flex-direction: column;
+
+      .card-content {
+        &__img {
+          height: auto;
+          max-height: 400px;
+        }
+      }
+    }
+  }
 }

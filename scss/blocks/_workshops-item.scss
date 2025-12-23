@@ -41,11 +41,12 @@
   }
 
   &__content {
-    padding: 40px;
+    padding: calculate-clamp(30px, 40px, 1280px, 480px)
+      calculate-clamp(20px, 40px, 1280px, 480px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 40px;
+    gap: calculate-clamp(24px, 40px, 1280px, 480px);
   }
 
   &__header {
@@ -65,5 +66,20 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+  }
+
+  @media (max-width: 1023px) {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+
+    &__img {
+      position: static;
+      height: calculate-clamp(260px, 300px, 1280px, 480px);
+    }
+
+    &__img-box {
+      order: 10000;
+    }
   }
 }

@@ -2,8 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 34px;
-  padding: 8px 12px;
+  min-width: calculate-clamp(30px, 34px, 1280px, 480px);
+  padding: calculate-clamp(6px, 8px, 1280px, 480px)
+    calculate-clamp(8px, 12px, 1280px, 480px);
   background-color: var(--gray-color-200);
   gap: 10px;
 

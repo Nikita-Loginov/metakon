@@ -25,18 +25,18 @@
   }
 
   &__header {
-    padding: 20px 24px;
+    padding: calculate-clamp(16px, 20px, 1280px, 480px) calculate-clamp(16px, 24px, 1280px, 480px);
     display: flex;
     flex-direction: column;
     gap: 12px;
-    flex:1;
+    flex: 1;
   }
 
   &__content {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    flex:1;
+    flex: 1;
   }
 
   &__tags {
@@ -48,7 +48,7 @@
 
   &__img {
     width: 100%;
-    height: 270px;
+    height: calculate-clamp(124px, 270px, 1280px, 480px);
     margin-top: auto;
 
     img,
@@ -57,9 +57,15 @@
       height: 100%;
       object-fit: cover;
     }
+
+    @media(max-width:767px) {
+      height: calculate-clamp(124px, 310px, 767px, 480px);
+    }
   }
 
   &__footer {
     margin-top: auto;
   }
+
+  // @media(max-width)
 }

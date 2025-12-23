@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head lang="ru">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow">
@@ -419,6 +419,14 @@
       stroke-linejoin="round"
     />
   </symbol>
+
+  <symbol id="arrow-bottom-icon" viewBox="0 0 10 6">
+    <path
+      xmlns="http://www.w3.org/2000/svg"
+      d="M8.19526 0.195262C8.45561 -0.0650874 8.87762 -0.0650874 9.13797 0.195262C9.39832 0.455612 9.39832 0.877621 9.13797 1.13797L5.13797 5.13797C4.87762 5.39832 4.45561 5.39832 4.19526 5.13797L0.195262 1.13797C-0.0650874 0.877621 -0.0650874 0.455612 0.195262 0.195262C0.455612 -0.0650874 0.877621 -0.0650874 1.13797 0.195262L4.66662 3.72391L8.19526 0.195262Z"
+      fill="currentColor"
+    />
+  </symbol>
 </svg>
 
 
@@ -496,6 +504,16 @@
         </div>
 
         <div class="menu">
+          <button
+            class="menu__burger"
+            type="button"
+            aria-label="Открыть/закрыть меню"
+          >
+            <div class="menu__burger-box">
+              <span></span>
+            </div>
+          </button>
+
           <div class="menu__content">
             <ul class="menu__list accordeon" data-width="1280">
               <li class="menu__item">
@@ -505,9 +523,20 @@
                     role="button"
                   >
                     <span class="p2">О заводе</span>
+
+                    <div class="arrow">
+                      <span class="icon">
+                        <svg>
+                          <use xlink:href="#arrow-bottom-icon"></use>
+                        </svg>
+                      </span>
+                    </div>
                   </div>
 
-                  <div class="popup-list__box accordeon__answer">
+                  <div
+                    class="popup-list__box accordeon__answer"
+                    data-padding-top="20"
+                  >
                     <ul class="menu__sublist">
                       <li class="menu__sublist-item">
                         <a
@@ -515,6 +544,7 @@
                           title="Производство"
                           aria-label="Перейти на страницу Производство"
                           class="menu__sublist-link"
+                          data-close-menu
                         >
                           <span class="p2">Производство</span>
                         </a>
@@ -526,6 +556,7 @@
                           title="Новости и акции"
                           aria-label="Перейти на страницу Новости и акции"
                           class="menu__sublist-link"
+                          data-close-menu
                         >
                           <span class="p2">Новости и акции</span>
                         </a>
@@ -537,6 +568,7 @@
                           title="Прайс лист"
                           aria-label="Перейти на страницу Прайс лист"
                           class="menu__sublist-link"
+                          data-close-menu
                         >
                           <span class="p2">Прайс лист</span>
                         </a>
@@ -548,6 +580,7 @@
                           title="Работа"
                           aria-label="Перейти на страницу Работа"
                           class="menu__sublist-link"
+                          data-close-menu
                         >
                           <span class="p2">Работа</span>
                         </a>
@@ -564,9 +597,20 @@
                     role="button"
                   >
                     <span class="p2">Услуги</span>
+
+                    <div class="arrow">
+                      <span class="icon">
+                        <svg>
+                          <use xlink:href="#arrow-bottom-icon"></use>
+                        </svg>
+                      </span>
+                    </div>
                   </div>
 
-                  <div class="popup-list__box accordeon__answer">
+                  <div
+                    class="popup-list__box accordeon__answer"
+                    data-padding-top="20"
+                  >
                     <ul class="menu__sublist">
                       <li class="menu__sublist-item">
                         <a
@@ -574,6 +618,7 @@
                           title="Строительство"
                           aria-label="Перейти на страницу Строительство"
                           class="menu__sublist-link"
+                          data-close-menu
                         >
                           <span class="p2">Строительство</span>
                         </a>
@@ -585,6 +630,7 @@
                           title="Монтажно-сварочные работы"
                           aria-label="Перейти на страницу Монтажно-сварочные работы"
                           class="menu__sublist-link"
+                          data-close-menu
                         >
                           <span class="p2">Монтажно-сварочные работы</span>
                         </a>
@@ -596,6 +642,7 @@
                           title="Сверление отверстий в металле"
                           aria-label="Перейти на страницу Сверление отверстий в металле"
                           class="menu__sublist-link"
+                          data-close-menu
                         >
                           <span class="p2">Сверление отверстий в металле</span>
                         </a>
@@ -607,6 +654,7 @@
                           title="Резка листового металла"
                           aria-label="Перейти на страницу Резка листового металла"
                           class="menu__sublist-link"
+                          data-close-menu
                         >
                           <span class="p2">Резка листового металла</span>
                         </a>
@@ -619,9 +667,11 @@
               <li class="menu__item">
                 <div class="menu__link">
                   <a
+                    href="#"
                     class="menu__item-box link-spread"
                     title="Продукция"
                     aria-label="Перейти на страницу Продукция"
+                    data-close-menu
                   >
                     <span class="p2">Продукция</span>
                   </a>
@@ -631,9 +681,11 @@
               <li class="menu__item">
                 <div class="menu__link">
                   <a
+                    href="#"
                     class="menu__item-box link-spread"
                     title="Галерея работ"
                     aria-label="Перейти на страницу Галерея работ"
+                    data-close-menu
                   >
                     <span class="p2">Галерея работ</span>
                   </a>
@@ -643,9 +695,11 @@
               <li class="menu__item">
                 <div class="menu__link">
                   <a
+                    href="#"
                     class="menu__item-box link-spread"
                     title="Строительство"
                     aria-label="Перейти на страницу Строительство"
+                    data-close-menu
                   >
                     <span class="p2">Строительство</span>
                   </a>
@@ -655,9 +709,11 @@
               <li class="menu__item">
                 <div class="menu__link">
                   <a
+                    href="#"
                     class="menu__item-box link-spread"
                     title="Контакты"
                     aria-label="Перейти на страницу Контакты"
+                    data-close-menu
                   >
                     <span class="p2">Контакты</span>
                   </a>
@@ -665,12 +721,78 @@
               </li>
             </ul>
 
-            <div class="menu__mobile"></div>
+            <div class="menu__mobile">
+              <div class="header-top">
+                <ul class="header-top__inner">
+                  <li class="header-top__items">
+                    <div class="header-top__item">
+                      <p class="p4">Адрес:</p>
+
+                      <a
+                        href="https://yandex.ru/maps/11108/perm-krai/house/shosse_kosmonavtov_328b_1/YU8Ydg9kSk0EQFttfXV0cH9jYw==/?ll=56.084384%2C57.951307&z=17"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        aria-label="Перейти по адресу: Пермский край, Шоссе Космонавтов, 328/б. Откроется в новом окне."
+                        title="Пермский край, Шоссе Космонавтов, 328/б"
+                        class="p4"
+                        >Пермский край, Шоссе Космонавтов, 328/б</a
+                      >
+                    </div>
+                  </li>
+
+                  <li class="header-top__items">
+                    <div class="header-top__item">
+                      <p class="p4">Почта:</p>
+
+                      <a
+                        href="mailto:manager_metakon@mail.ru"
+                        rel="noopener noreferrer"
+                        aria-label="Написать письмо на manager_metakon@mail.ru"
+                        title="manager_metakon@mail.ru"
+                        itemprop="email"
+                        class="p4"
+                        >manager_metakon@mail.ru</a
+                      >
+                    </div>
+                  </li>
+
+                  <li class="header-top__items">
+                    <div class="header-top__item">
+                      <p class="p4">Телефон:</p>
+
+                      <a
+                        href="tel:+73422009898"
+                        rel="noopener noreferrer"
+                        aria-label="Позвлнить по номеру +7 (342) 200 98 98"
+                        title="+7 (342) 200 98 98"
+                        itemprop="telephone"
+                        class="p4"
+                        >+7 (342) 200 98 98</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="menu__mobile-footer">
+                <button
+                  class="button button--small modal-open"
+                  type="button"
+                  data-modal="messageModal"
+                >
+                  <p class="p3 bold-font">Обратный звонок</p>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="header-bottom__details">
-          <button class="button button--small modal-open" type="button" data-modal="messageModal">
+          <button
+            class="button button--small modal-open"
+            type="button"
+            data-modal="messageModal"
+          >
             <p class="p3 bold-font">Обратный звонок</p>
           </button>
         </div>
@@ -1570,7 +1692,7 @@
           </div>
         </section>
 
-        <section class="products">
+       <section class="products">
           <div class="container">
             <div class="topBox">
               <div class="topBox__header">
@@ -1725,7 +1847,7 @@
           </div>
         </section>
 
-        <section class="services swiper-box">
+        <section class="services swiper-box swiper-box--lg-noHidden">
           <div class="container">
             <div class="topBox">
               <div class="topBox__content">

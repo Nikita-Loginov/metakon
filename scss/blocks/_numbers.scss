@@ -4,7 +4,7 @@
   &__inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: calculate-clamp(24px, 40px, 1280px, 480px);
   }
 
   &__info {
@@ -16,7 +16,8 @@
   &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px 48px;
+    --gap-items-decor: #{calculate-clamp(16px, 24px, 1280px, 480px)};
+    gap: calculate-clamp(16px, 20px, 1280px, 480px) calculate-clamp(32px, 48px, 1280px, 480px);
 
     .card-info {
       padding: 18px 0;
@@ -30,6 +31,13 @@
           display: none;
         }
       }
+    }
+  }
+
+  @media(max-width:1023px) {
+    &__inner {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

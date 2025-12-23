@@ -19,4 +19,11 @@
   &.active {
     display: flex;
   }
+
+  @media(max-width:767px) {
+    max-width: 100%;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+  }
 }

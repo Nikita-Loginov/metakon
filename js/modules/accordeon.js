@@ -16,7 +16,7 @@ export function toggleAccordeonItems(e) {
     }
 
     if (maxWidth > window.innerWidth) {
-      classAction(relativeItem, "active", "toggle");
+      classAction(relativeItem, "open", "toggle");
 
       setHeightAnswer(relativeItem);
 
@@ -25,7 +25,7 @@ export function toggleAccordeonItems(e) {
 
       if (prevActiveAccordeonItem && prevActiveAccordeonItem !== relativeItem) {
         if (!relative.classList.contains("accordeon--showMore")) {
-          classAction(prevActiveAccordeonItem, "active", "remove");
+          classAction(prevActiveAccordeonItem, "open", "remove");
         }
         setHeightAnswer(prevActiveAccordeonItem);
       }
@@ -39,8 +39,8 @@ export function toggleAccordeonItems(e) {
     const relativeItems = relative.querySelectorAll(".accordeon__item");
 
     relativeItems.forEach((item) => {
-      if (!item.classList.contains("active")) {
-        classAction(item, "active", "add");
+      if (!item.classList.contains("open")) {
+        classAction(item, "open", "add");
         setHeightAnswer(item);
 
         const resizeHandler = () => setHeightAnswer(item);
@@ -62,7 +62,7 @@ function resetAccordeon() {
   prevActiveAccordeonItem = null;
 
   accordeonItems.forEach((item) => {
-    classAction(item, "active", "remove");
+    classAction(item, "open", "remove");
 
     const itemAnswer = item.querySelector(".accordeon__answer");
 
@@ -87,7 +87,7 @@ function setHeightAnswer(item) {
   const itemAnswer = item.querySelector(".accordeon__answer");
   const paddingTop = Number(itemAnswer?.dataset?.paddingTop) || 12;
 
-  if (item.classList.contains("active")) {
+  if (item.classList.contains("open")) {
     itemAnswer.style.maxHeight = itemAnswer.scrollHeight + paddingTop + "px";
   } else {
     itemAnswer.style.maxHeight = "0";
@@ -109,15 +109,14 @@ export const renderItems = (items, types, allMinWidthInner) => {
       const relative = box.closest("section");
 
       const tabsBox = relative.querySelector(".tabs-box");
-      const swiper = tabsBox.closest('.swiper')
-    
+      const swiper = tabsBox.closest(".swiper");
 
       const tabs = renderTabs(types);
 
       const tabsSwiper = new Swiper(swiper, {
-        slidesPerView: 'auto',
+        slidesPerView: "auto",
         spaceBetween: 12,
-      })
+      });
 
       tabsBox.innerHTML = "";
 
@@ -166,9 +165,9 @@ const renderTabs = (types) => {
   const html = [];
 
   types.forEach((type, index) => {
-    const item = `<div class="swiper-slide"><div role="button" data-type=${type.name} class="button ${
-      index ? "button--gray" : ""
-    }">${type.text}</div></div>`;
+    const item = `<div class="swiper-slide"><div role="button" data-type=${
+      type.name
+    } class="button ${index ? "button--gray" : ""}">${type.text}</div></div>`;
 
     html.push(item);
   });
@@ -179,38 +178,37 @@ const renderTabs = (types) => {
 export const changeActiveTabs = (e, items) => {
   const { target } = e;
 
-  if (!target.closest('.tabs-box')) return;
+  if (!target.closest(".tabs-box")) return;
 
-  const btn = target.closest('.button');
-  const tabsBox = target.closest('.tabs-box');
-  const btns = tabsBox.querySelectorAll('.button')
+  const btn = target.closest(".button");
+  const tabsBox = target.closest(".tabs-box");
+  const btns = tabsBox.querySelectorAll(".button");
 
-  if (!btns.length || !btn) return
+  if (!btns.length || !btn) return;
 
   const type = btn.dataset.type;
 
-  if (!type) return
-  
-  const relative = target.closest('section');
+  if (!type) return;
 
-  const itemsBox = relative.querySelector('.accordeon--render');
+  const relative = target.closest("section");
+
+  const itemsBox = relative.querySelector(".accordeon--render");
 
   if (!itemsBox) return;
 
   const itemsFilter = items.filter((item) => item.type === type);
 
-  if (!itemsFilter.length) return
+  if (!itemsFilter.length) return;
 
-  itemsBox.innerHTML = '';
+  itemsBox.innerHTML = "";
 
   const accordeonItems = renderAccordeonItem(itemsFilter);
 
-
   btns.forEach((btn) => {
-    btn.classList.add('button--gray')
-  })
+    btn.classList.add("button--gray");
+  });
 
-  btn.classList.remove('button--gray');
+  btn.classList.remove("button--gray");
 
   itemsBox.innerHTML = accordeonItems;
 };

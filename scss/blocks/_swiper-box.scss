@@ -15,6 +15,37 @@
       display: none;
     }
   }
+
+  &--media {
+    .swiper-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: calculate-clamp(12px, 24px, 1400px, 767px);
+
+      @media (max-width: 767px) {
+        display: flex;
+        gap: 0;
+      }
+    }
+
+    @media (max-width: 767px) {
+      overflow: hidden;
+
+      .swiper {
+        overflow: visible;
+      }
+    }
+  }
+
+  &--lg-noHidden {
+    @media (max-width: 1279px) {
+      overflow: hidden;
+
+      .swiper {
+        overflow: visible;
+      }
+    }
+  }
 }
 
 .swiper-pagination-box {
@@ -44,4 +75,3 @@
     display: none;
   }
 }
-

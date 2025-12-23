@@ -2,8 +2,8 @@
   display: flex;
   gap: 11px;
   align-items: flex-end;
-  width: 166px;
-  height: 53px;
+  width: calculate-clamp(131px, 166px, 1023px, 480px);
+  height: calculate-clamp(42px, 53px, 1023px, 480px);
   flex-shrink: 0;
 
   &__img {
