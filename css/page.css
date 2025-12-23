@@ -3331,13 +3331,21 @@ a.document-item:hover .document-item__img img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 0;
+  padding: clamp(24px, 14.4px + 2vw, 40px) 0;
   border-top: 1px solid var(--gray-color-140);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .footer-top__item:hover {
   border-color: var(--primary-color-100);
+}
+@media (max-width: 400px) {
+  .footer-top__item {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
 }
 .footer-top__info {
   display: -webkit-box;

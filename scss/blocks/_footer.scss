@@ -73,12 +73,19 @@
   &__item {
     display: flex;
     align-items: center;
-    padding: 40px 0;
+    padding: calculate-clamp(24px, 40px, 1280px, 480px) 0;
     border-top: 1px solid var(--gray-color-140);
     transition: all 0.3s;
 
     &:hover {
       border-color: var(--primary-color-100);
+    }
+
+    @media (max-width: 400px) {
+      overflow-wrap: break-word;
+      word-break: break-word;
+      -ms-hyphens: auto;
+      hyphens: auto;
     }
   }
 
@@ -210,9 +217,9 @@
 
   @media (max-width: 767px) {
     &__list {
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     flex-direction: column;
