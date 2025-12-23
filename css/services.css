@@ -1,6 +1,9 @@
 .services {
   background-color: var(--gray-color-100);
 }
+.services--noBg {
+  background-color: transparent;
+}
 .services__inner {
   display: -webkit-box;
   display: -ms-flexbox;

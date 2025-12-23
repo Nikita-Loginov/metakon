@@ -14,7 +14,7 @@
   &--big {
     .gallery-item {
       &__img {
-        height: 380px;
+        height: calculate-clamp(300px, 340px, 1280px, 480px);
       }
 
       &__content {

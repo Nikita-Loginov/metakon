@@ -1,6 +1,10 @@
 .services {
   background-color: var(--gray-color-100);
 
+  &--noBg {
+    background-color: transparent;
+  }
+
   &__inner {
     display: flex;
     flex-direction: column;

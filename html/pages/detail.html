@@ -10,7 +10,7 @@
         <section class="detail">
           <div class="container">
             <div class="topBox">
-              <div class="topBox__content">
+              <div class="topBox__content topBox__content--column">
                 <div class="topBox__content-info">
                   <div class="breadcrumbs breadcrumbs--dark">
                     <div class="swiper swiper--breadcrumbs">
@@ -71,22 +71,19 @@
                       >14 сентября 2027</time
                     >
                   </div>
+                </div>
 
-                  <div class="detail__img detail__img--big">
-                    <picture>
-                      <source
-                        srcset="
-                          /img/about/six.webp   1x,
-                          /img/about/six2x.webp 2x
-                        "
-                      />
-                      <img
-                        src="/img/about/six.webp"
-                        alt="фотография"
-                        loading="lazy"
-                      />
-                    </picture>
-                  </div>
+                <div class="detail__img detail__img--big">
+                  <picture>
+                    <source
+                      srcset="/img/about/six.webp 1x, /img/about/six2x.webp 2x"
+                    />
+                    <img
+                      src="/img/about/six.webp"
+                      alt="фотография"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
               </div>
 
@@ -477,7 +474,9 @@
                     </ul>
                   </div>
 
-                  <div class="detail__banner detail__banner--sticky">
+                  <div
+                    class="detail__banner detail__banner--sticky detail__banner--none"
+                  >
                     <p class="p2 bold-font">Другие статьи</p>
 
                     <ul

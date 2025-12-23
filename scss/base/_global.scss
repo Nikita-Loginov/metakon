@@ -50,7 +50,9 @@ body {
 
 .main {
   flex: 1;
-  padding-top: calc(var(--header-height, calculate-clamp(65px, 115px, 1280px, 480px)));
+  padding-top: calc(
+    var(--header-height, calculate-clamp(65px, 115px, 1280px, 480px))
+  );
 
   section {
     margin-bottom: var(--gap-blocks);
@@ -82,7 +84,15 @@ body {
   }
 
   &--paddingBig {
-    padding-top: calc(var(--header-height, 115px) + 40px);
+    padding-top: calc(
+      var(--header-height, calculate-clamp(65px, 115px, 1280px, 480px)) + 40px
+    );
+
+    @media (max-width: 767px) {
+      padding-top: calc(
+        var(--header-height, calculate-clamp(65px, 115px, 1280px, 480px)) + 60px
+      );
+    }
   }
 }
 
@@ -120,6 +130,10 @@ body {
   flex-direction: column;
   gap: calculate-clamp(16px, 40px, 1223px, 767px);
 
+  &--big {
+    gap: calculate-clamp(30px, 40px, 1223px, 767px);
+  }
+
   &__header {
     display: flex;
     flex-direction: column;
@@ -139,6 +153,11 @@ body {
     align-items: flex-end;
     gap: 20px;
     justify-content: space-between;
+
+    &--column {
+      flex-direction: column;
+      align-items: normal;
+    }
   }
 
   &__content-info {
@@ -159,7 +178,7 @@ body {
     }
 
     &__info {
-      order:10000;
+      order: 10000;
       flex-direction: column;
       align-items: normal;
 
@@ -247,7 +266,8 @@ body {
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: calculate-clamp(16px, 32px, 1280px, 480px) calculate-clamp(16px, 24px, 1280px, 480px);
+    gap: calculate-clamp(16px, 32px, 1280px, 480px)
+      calculate-clamp(16px, 24px, 1280px, 480px);
 
     &--four {
       grid-template-columns: repeat(4, 1fr);
@@ -261,11 +281,11 @@ body {
       gap: 20px;
     }
 
-    @media(max-width:1223px) {
+    @media (max-width: 1223px) {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media(max-width:767px) {
+    @media (max-width: 767px) {
       display: flex;
       flex-direction: column;
     }

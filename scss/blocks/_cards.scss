@@ -244,26 +244,26 @@ a.card-detail {
     flex-direction: column;
     gap: 12px;
     background-color: var(--gray-color-100);
-    padding: 24px;
+    padding: calculate-clamp(16px, 24px, 1280px, 480px);
   }
 }
 
 .card-line {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding-left: 24px;
+  gap: calculate-clamp(8px, 10px, 1280px, 480px);
+  padding-left: calculate-clamp(16px, 24px, 1280px, 480px);
   border-left: 2px solid var(--primary-color-100);
 
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: calculate-clamp(8px, 12px, 1280px, 480px);;
   }
 }
 
 .card-default {
-  padding: 32px;
+  padding: calculate-clamp(24px, 32px, 1280px, 480px);
   background-color: var(--gray-color-100);
   display: flex;
   flex-direction: column;

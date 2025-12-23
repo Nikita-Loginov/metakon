@@ -8,6 +8,13 @@
   &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: calculate-clamp(18px, 40px, 1280px, 480px);
+  }
+
+  @media(max-width:1023px) {
+    &__items {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

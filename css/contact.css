@@ -11,5 +11,16 @@
 .contact__items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: clamp(18px, 4.8px + 2.75vw, 40px);
+}
+@media (max-width: 1023px) {
+  .contact__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
