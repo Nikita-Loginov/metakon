@@ -50,7 +50,7 @@ body {
 
 .main {
   flex: 1;
-  padding-top: calc(var(--header-height, 115px));
+  padding-top: calc(var(--header-height, calculate-clamp(65px, 115px, 1280px, 480px)));
 
   section {
     margin-bottom: var(--gap-blocks);

@@ -298,7 +298,7 @@ body.open-decor:before {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding-top: calc(var(--header-height, 115px));
+  padding-top: calc(var(--header-height, clamp(65px, 35px + 6.25vw, 115px)));
 }
 .main section {
   margin-bottom: var(--gap-blocks);
@@ -1879,6 +1879,7 @@ a.card-detail:hover .card-detail__content .button, a.card-detail:active .card-de
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
+  overflow: hidden;
 }
 .top__footer .items-decor {
   max-width: 726px;
