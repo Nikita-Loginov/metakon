@@ -20,7 +20,7 @@ export const SWIPERS = {
           slidesPerView: 5,
           spaceBetween: 48,
         },
-        1080 : {
+        1080: {
           slidesPerView: 4.6,
         },
         800: {
@@ -28,8 +28,8 @@ export const SWIPERS = {
         },
         560: {
           slidesPerView: 2.3,
-        }
-      }
+        },
+      },
     },
   },
   ABOUT_NUMBER: {
@@ -39,11 +39,11 @@ export const SWIPERS = {
       slidesPerView: 1.2,
       spaceBetween: 12,
       mousewheel: MOUSE_WHEEL_CONFIG,
-      breakpoints : {
+      breakpoints: {
         560: {
           slidesPerView: 2.1,
-        }
-      }
+        },
+      },
     },
   },
   DOCUMENTS_MAIN: {
@@ -62,7 +62,7 @@ export const SWIPERS = {
           slidesPerView: 5,
           spaceBetween: 24,
         },
-        1080 : {
+        1080: {
           slidesPerView: 4.6,
         },
         800: {
@@ -70,8 +70,8 @@ export const SWIPERS = {
         },
         560: {
           slidesPerView: 2.3,
-        }
-      }
+        },
+      },
     },
   },
   GALLERY_MAIN: {
@@ -90,7 +90,7 @@ export const SWIPERS = {
           slidesPerView: 4,
           spaceBetween: 20,
         },
-        1080 : {
+        1080: {
           slidesPerView: 3.3,
         },
         800: {
@@ -98,8 +98,8 @@ export const SWIPERS = {
         },
         560: {
           slidesPerView: 1.7,
-        }
-      }
+        },
+      },
     },
   },
   BREADCRUMBS: {
@@ -153,8 +153,8 @@ export const SWIPERS = {
         },
         500: {
           slidesPerView: 1.5,
-        }
-      }
+        },
+      },
     },
   },
   IMG_SWIPER_DETAIL: {
@@ -171,6 +171,15 @@ export const SWIPERS = {
         el: ".detail .swiper-pagination",
         type: "fraction",
       },
+      mousewheel: MOUSE_WHEEL_CONFIG,
+    },
+  },
+  TABS_SWIPER: {
+    selector: ".swiper--tabs",
+    breakpoint: 122300000000,
+    options: {
+      slidesPerView: "auto",
+      spaceBetween: 12,
       mousewheel: MOUSE_WHEEL_CONFIG,
     },
   },

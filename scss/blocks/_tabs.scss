@@ -1,0 +1,23 @@
+.tab-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-color-100);
+  gap: 8px;
+  padding: calculate-clamp(9px, 12px, 1280px, 480px) calculate-clamp(12px, 16px, 1280px, 480px);
+  min-height: calculate-clamp(34px, 42px, 1280px, 480px);
+  cursor: pointer;
+  color: var(--dark-color-200);
+  font-weight: 500;
+  transition: all .3s;
+
+  &.active {
+    background-color: var(--dark-color-200);
+    color: var(--gray-color-100);
+  }
+
+  &:hover:not(.active) {
+    background-color: var(--dark-color-500);
+    color: var(--gray-color-100);
+  }
+}

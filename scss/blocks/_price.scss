@@ -1,0 +1,17 @@
+.price {
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: calculate-clamp(24px, 40px, 1280px, 480px);
+  }
+
+  @media (max-width: 767px) {
+    .container {
+      padding: 0;
+    }
+
+    .topBox__content-info {
+      padding-inline: var(--container-inline-padding);
+    }
+  }
+}

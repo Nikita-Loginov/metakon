@@ -21,6 +21,9 @@ html {
   --gray-color-700: #adadad;
   --gray-color-800: #828282;
   --gray-color-900: #626262;
+  --gray-color-1000: #6b7280;
+  --gray-color-1100: #f7f7f7;
+  --gray-color-1200: #e9e9e9;
   --primary-color-100: #ec6548;
   --primary-color-200: #ff795c;
   --red-color-100: #ff0000;
@@ -2355,6 +2358,11 @@ a.card-detail:hover .card-detail__content .button, a.card-detail:active .card-de
     overflow: visible;
   }
 }
+.swiper-box--auto .swiper-slide {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 
 .swiper-pagination-box {
   display: -webkit-box;
@@ -3276,6 +3284,237 @@ a.document-item:hover .document-item__img img {
 .accordeon__item .arrow {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.tab-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--gray-color-100);
+  gap: 8px;
+  padding: clamp(9px, 7.2px + 0.375vw, 12px) clamp(12px, 9.6px + 0.5vw, 16px);
+  min-height: clamp(34px, 29.2px + 1vw, 42px);
+  cursor: pointer;
+  color: var(--dark-color-200);
+  font-weight: 500;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.tab-btn.active {
+  background-color: var(--dark-color-200);
+  color: var(--gray-color-100);
+}
+.tab-btn:hover:not(.active) {
+  background-color: var(--dark-color-500);
+  color: var(--gray-color-100);
+}
+
+.table-box {
+  padding: 32px clamp(20px, 12.8px + 1.5vw, 32px);
+  background-color: var(--gray-color-100);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: clamp(8px, 3.2px + 1vw, 16px);
+}
+.table-box__block-wrapper {
+  width: 100%;
+  container-type: inline-size;
+}
+@container (max-width: 800px) {
+  .table-box__block-wrapper .table-box__block {
+    padding-bottom: 16px;
+  }
+}
+.table-box__block {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-color: var(--primary-color-100) var(--gray-color-200);
+  scrollbar-width: thin;
+}
+.table-box__block::-webkit-scrollbar {
+  height: 6px;
+}
+.table-box__block::-webkit-scrollbar-track {
+  background: var(--gray-color-200);
+}
+.table-box__block::-webkit-scrollbar-thumb {
+  background: var(--primary-color-100);
+}
+.table-box__block::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-color-600);
+}
+.table-box__block::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.table-simple {
+  font-weight: var(--weight-font-main);
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+@media (max-width: 1023px) {
+  .table-simple {
+    table-layout: auto;
+    min-width: 800px;
+  }
+}
+.table-simple th,
+.table-simple td {
+  text-align: left;
+  padding: 16px clamp(5px, -1px + 1.25vw, 15px);
+  border-bottom: 1px solid var(--gray-color-500);
+}
+@media (max-width: 1023px) {
+  .table-simple th,
+  .table-simple td {
+    white-space: nowrap;
+  }
+}
+.table-simple thead {
+  color: var(--gray-color-1000);
+}
+@media (max-width: 1023px) {
+  .table-simple thead th {
+    white-space: nowrap;
+  }
+}
+.table-simple thead th.border-all {
+  border: 1px solid var(--gray-color-500);
+}
+.table-simple thead th.border-all--noLeft {
+  border-left: none;
+}
+.table-simple p {
+  font-weight: var(--weight-font-main);
+}
+.table-simple:not([class*="--"]) th,
+.table-simple:not([class*="--"]) td {
+  width: 50%;
+}
+.table-simple:not([class*="--"]) th:last-child,
+.table-simple:not([class*="--"]) td:last-child {
+  text-align: right;
+}
+@media (max-width: 1023px) {
+  .table-simple:not([class*="--"]) th:last-child,
+  .table-simple:not([class*="--"]) td:last-child {
+    text-align: left;
+  }
+}
+@media (max-width: 1023px) {
+  .table-simple:not([class*="--"]) th,
+  .table-simple:not([class*="--"]) td {
+    width: auto;
+  }
+}
+.table-simple tbody tr:nth-child(even) td {
+  background-color: var(--gray-color-1100);
+}
+.table-simple tbody .table-simple__decor {
+  background-color: var(--gray-color-1200);
+}
+.table-simple tbody .table-simple__decor td {
+  white-space: normal;
+}
+@media (min-width: 1024px) {
+  .table-simple--three th:first-child,
+  .table-simple--three td:first-child {
+    width: 70%;
+  }
+  .table-simple--three th:not(:first-child),
+  .table-simple--three td:not(:first-child) {
+    width: 15%;
+  }
+  .table-simple--three th:last-child,
+  .table-simple--three td:last-child {
+    text-align: left;
+  }
+}
+@media (max-width: 1023px) {
+  .table-simple--three th,
+  .table-simple--three td {
+    width: auto !important;
+  }
+  .table-simple--three th:last-child,
+  .table-simple--three td:last-child {
+    text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  .table-simple--four th,
+  .table-simple--four td {
+    width: 25%;
+  }
+  .table-simple--four th:last-child,
+  .table-simple--four td:last-child {
+    text-align: left;
+  }
+}
+@media (max-width: 1023px) {
+  .table-simple--four th,
+  .table-simple--four td {
+    width: auto !important;
+  }
+  .table-simple--four th:last-child,
+  .table-simple--four td:last-child {
+    text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  .table-simple--five th,
+  .table-simple--five td {
+    width: 20%;
+  }
+  .table-simple--five th:last-child,
+  .table-simple--five td:last-child {
+    text-align: left;
+  }
+}
+@media (max-width: 1023px) {
+  .table-simple--five th,
+  .table-simple--five td {
+    width: auto !important;
+  }
+  .table-simple--five th:last-child,
+  .table-simple--five td:last-child {
+    text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  .table-simple--difficult thead th {
+    width: auto;
+  }
+}
+@media (max-width: 1023px) {
+  .table-simple--difficult thead th {
+    width: auto;
+  }
+}
+.table-simple__accent {
+  background-color: var(--gray-color-1200);
+  text-align: center;
+}
+.table-simple__accent p {
+  color: var(--dark-color-100);
+}
+@media (max-width: 1023px) {
+  .table-simple__accent td {
+    white-space: normal;
+    text-align: left;
+  }
 }
 
 .footer {

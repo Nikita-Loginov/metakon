@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('../modules/head.html', { "title" : "Прайс лист", "links" :
+  ["./css/price.css", "./css/lib/swiper.min.css"]})
+  <body>
+    <div class="wrapper">
+      @@include('../modules/header.html')
+
+      <main class="main main--paddingBig">
+        <section
+          class="price swiper-box swiper-box--lg-noHidden swiper-box--auto"
+        >
+          <div class="container">
+            <div class="topBox">
+              <div class="topBox__content topBox__content--column">
+                <div class="topBox__content-info">
+                  <div class="breadcrumbs breadcrumbs--dark">
+                    <div class="swiper swiper--breadcrumbs">
+                      <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                          <a
+                            href="/index.html"
+                            title="Главная"
+                            aria-label="Перейти на страницу Главная"
+                            class="breadcrumbs__item p4"
+                          >
+                            Главная
+                          </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                          <div class="breadcrumbs__item p4">Прайс лист</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <h1 class="h1">Прайс лист</h1>
+
+                  <div class="swiper-box__block">
+                    <div class="swiper swiper--tabs">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div
+                            class="tab-btn active medium-font p3"
+                            role="button"
+                          >
+                            Все
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="tab-btn medium-font p3" role="button">
+                            Металлоконструкции
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="tab-btn medium-font p3" role="button">
+                            Ограждения из металла
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="tab-btn medium-font p3" role="button">
+                            Монтаж ангаров
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="tab-btn medium-font p3" role="button">
+                            Рамные металлоконструкции
+                          </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                          <div class="tab-btn medium-font p3" role="button">
+                            Металлоконструкции
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="price__items">
+                <div class="table-box">
+                  <p class="p1 medium-font">Таблица в 2 колонки</p>
+
+                  <div class="table-box__block-wrapper">
+                    <div class="table-box__block">
+                      <table class="table-simple">
+                        <thead>
+                          <tr>
+                            <th>
+                              <p class="p4">Наименование</p>
+                            </th>
+
+                            <th>
+                              <p class="p4">Цена, тонна</p>
+                            </th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>
+                              <p class="p3">Арматурный каркас</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">от 40 500 руб.</p>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <p class="p3">Арматурный каркас</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">от 40 500 руб.</p>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <p class="p3">Арматурный каркас</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">от 40 500 руб.</p>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <p class="p3">Арматурный каркас</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">от 40 500 руб.</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="table-box">
+                  <p class="p1 medium-font">Таблица в 3 колонки</p>
+
+                  <div class="table-box__block-wrapper">
+                    <div class="table-box__block">
+                      <table class="table-simple table-simple--three">
+                        <thead>
+                          <tr>
+                            <th>
+                              <p class="p4">Наименование</p>
+                            </th>
+
+                            <th>
+                              <p class="p4">Ед. изм.</p>
+                            </th>
+
+                            <th>
+                              <p class="p4">Цена</p>
+                            </th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>
+                              <p class="p3">Арматурный каркас</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">тонна</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">от 40 500 руб.</p>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <p class="p3">Арматурный каркас</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">тонна</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">от 40 500 руб.</p>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <p class="p3">Арматурный каркас</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">тонна</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">от 40 500 руб.</p>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <p class="p3">Арматурный каркас</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. At, repellat?
+                              </p>
+                            </td>
+
+                            <td>
+                              <p class="p3">от 40 500 руб.</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="table-box">
+                  <p class="p1 medium-font">Таблица в 4 колонки</p>
+
+                  <div class="table-box__block-wrapper">
+                    <div class="table-box__block">
+                      <table class="table-simple table-simple--four">
+                        <thead>
+                          <tr>
+                            <th>
+                              <p class="43">Марка рамы</p>
+                            </th>
+
+                            <th>
+                              <p class="p4">Вес, кг</p>
+                            </th>
+
+                            <th>
+                              <p class="p4">Цена (огрунтованные)</p>
+                            </th>
+
+                            <th>
+                              <p class="p4">Цена (горячеоцинкованные)</p>
+                            </th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>
+                              <p class="p3">РМГ-1</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">1130</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">81 900 руб.</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">96 300 руб.</p>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <p class="p3">РМГ-1</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">1130</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">81 900 руб.</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">96 300 руб.</p>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <p class="p3">РМГ-1</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">1130</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">81 900 руб.</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">96 300 руб.</p>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <p class="p3">РМГ-1</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">1130</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">81 900 руб.</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">96 300 руб.</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="table-box">
+                  <p class="p1 medium-font">
+                    Таблица в 4 колонки с названием типа
+                  </p>
+
+                  <div class="table-box__block-wrapper">
+                    <div class="table-box__block">
+                      <table class="table-simple table-simple--four">
+                        <thead>
+                          <tr>
+                            <th>
+                              <p class="p4">Марка рамы</p>
+                            </th>
+
+                            <th>
+                              <p class="p4">Вес, кг</p>
+                            </th>
+
+                            <th>
+                              <p class="p4">Цена (огрунтованные)</p>
+                            </th>
+
+                            <th>
+                              <p class="p4">Цена (горячеоцинкованные)</p>
+                            </th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr class="table-simple__decor">
+                            <td colspan="4">
+                              <p class="medium-font p3">
+                                Перила из нержавеющей стали
+                              </p>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <p class="p3">РМГ-1</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">1130</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">81 900 руб.</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">96 300 руб.</p>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <p class="p3">РМГ-1</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">1130</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">81 900 руб.</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">96 300 руб.</p>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <p class="p3">РМГ-1</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">1130</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">81 900 руб.</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">96 300 руб.</p>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <p class="p3">РМГ-1</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">1130</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">81 900 руб.</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">96 300 руб.</p>
+                            </td>
+                          </tr>
+                        </tbody>
+
+                        <tbody>
+                          <tr class="table-simple__decor">
+                            <td colspan="4">
+                              <p class="medium-font p3">
+                                Перила из нержавеющей стали
+                              </p>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <p class="p3">РМГ-1</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">1130</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">81 900 руб.</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">96 300 руб.</p>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <p class="p3">РМГ-1</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">1130</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">81 900 руб.</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">96 300 руб.</p>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <p class="p3">РМГ-1</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">1130</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">81 900 руб.</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">96 300 руб.</p>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <p class="p3">РМГ-1</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">1130</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">81 900 руб.</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">96 300 руб.</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="table-box">
+                  <p class="p1 medium-font">Сложная таблица</p>
+
+                  <div class="table-box__block-wrapper">
+                    <div class="table-box__block">
+                      <table
+                        class="table-simple table-simple--five table-simple--difficult"
+                      >
+                        <thead>
+                          <tr>
+                            <th
+                              rowspan="2"
+                              class="border-all border-all--noLeft"
+                            >
+                              <p class="p4">Форма лестницы</p>
+                            </th>
+
+                            <th colspan="4" class="table-simple__accent">
+                              <p class="p4">Металл косоуров или тетив</p>
+                            </th>
+                          </tr>
+
+                          <tr>
+                            <th>
+                              <p class="p4">10мм</p>
+                            </th>
+
+                            <th>
+                              <p class="p4">Двойной 6мм</p>
+                            </th>
+
+                            <th>
+                              <p class="p4">Тройной 10мм + 2х4мм</p>
+                            </th>
+
+                            <th>
+                              <p class="p4">Монокосоур из профильной трубы</p>
+                            </th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>
+                              <p class="p3">Прямая одномаршевая лестница</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">81 900 руб.</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">81 900 руб.</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">96 300 руб.</p>
+                            </td>
+
+                            <td>
+                              <p class="p3">96 300 руб.</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      @@include('../modules/footer.html')
+    </div>
+
+    <script src="/js/lib/swiper.min.js"></script>
+    <script src="/js/price.js" type="module"></script>
+  </body>
+</html>

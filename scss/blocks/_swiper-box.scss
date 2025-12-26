@@ -46,6 +46,12 @@
       }
     }
   }
+
+  &--auto {
+    .swiper-slide {
+      width: fit-content;
+    }
+  }
 }
 
 .swiper-pagination-box {
