@@ -157,11 +157,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: calculate-clamp(10px, 24px, 1280px, 480px);
 
   &__info {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 12px;
     width: 100%;
   }
@@ -191,6 +192,7 @@
     align-items: center;
     gap: 3px;
     color: var(--gray-color-400);
+    margin-left: auto;
 
     p {
       font-size: var(--font-size-little);
@@ -220,6 +222,14 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
+    }
+
+    &__dev {
+      margin: 0;
+    }
+
+    &__info {
+      align-items: center;
     }
 
     flex-direction: column;

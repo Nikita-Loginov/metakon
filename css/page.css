@@ -1226,7 +1226,7 @@ body.open-decor:before {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 15px;
-    padding-left: 30px;
+    padding-left: 25px;
   }
   .menu__item-box {
     padding: 0;
@@ -1381,7 +1381,7 @@ body.open-decor:before {
 .popup-list__box {
   position: absolute;
   z-index: 10;
-  right: 0;
+  left: -20px;
   top: calc(100% + var(--before-height-popup));
   width: 236px;
   background-color: var(--gray-color-100);
@@ -3722,7 +3722,7 @@ a.document-item:hover .document-item__img img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 24px;
+  gap: clamp(10px, 1.6px + 1.75vw, 24px);
 }
 .footer-copy__info {
   display: -webkit-box;
@@ -3732,6 +3732,9 @@ a.document-item:hover .document-item__img img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 12px;
   width: 100%;
 }
@@ -3769,6 +3772,7 @@ a.document-item:hover .document-item__img img {
           align-items: center;
   gap: 3px;
   color: var(--gray-color-400);
+  margin-left: auto;
 }
 .footer-copy__dev p {
   font-size: var(--font-size-little);
@@ -3811,5 +3815,13 @@ a.document-item:hover .document-item__img img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .footer-copy__dev {
+    margin: 0;
+  }
+  .footer-copy__info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }

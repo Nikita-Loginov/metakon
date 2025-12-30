@@ -35,7 +35,7 @@
   &__box {
     position: absolute;
     z-index: 10;
-    right: 0;
+    left: -20px;
     top: calc(100% + var(--before-height-popup));
     width: 236px;
     background-color: var(--gray-color-100);
